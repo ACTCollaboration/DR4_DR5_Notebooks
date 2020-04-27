@@ -24,7 +24,6 @@ RUN apt-get update && apt-get install -y \
 
 RUN ln -sfn /usr/bin/python3 /usr/bin/python
 
-WORKDIR /home/DockerFiles
 
 
 RUN python3 -m pip install --user --upgrade pip numpy cython ipython jupyter
