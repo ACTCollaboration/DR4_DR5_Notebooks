@@ -60,7 +60,7 @@ function stop_docker() {
 function main() {
     prepare_workspace
     start_docker
-    stop_dockers
+    stop_docker
 }
 
 main
