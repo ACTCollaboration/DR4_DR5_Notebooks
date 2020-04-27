@@ -42,7 +42,7 @@ function start_docker() {
 
     local docker_options="-it -p 8888:8888"
 
-    docker run $(echo ${docker_options}) mayamkay/docker_test:latest /bin/bash
+    docker run $(echo ${docker_options}) mayamkay/docker_testrun_0.0:latest /bin/bash
     return 0
 }
 
