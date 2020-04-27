@@ -4,6 +4,15 @@ current_dir=$(dirname $0)
 act_workspace=${ACT_WORKSPACE:-${current_dir/\./$PWD}}
 github=( "https://github.com/simonsobs/pixell")
 
+
+
+
+function msg_notice()
+{
+    echo -en "\\033[0;34mNOTICE: $@\\033[0;39m\n"
+    return 0
+}
+
 function prepare_workspace() {
     (
         cd ${act_workspace}
@@ -24,6 +33,7 @@ function prepare_workspace() {
     cid_file="${act_workspace}/.cid"
     return 0
 }
+
 
 function start_docker() {
     msg_notice "Starting ACT docker..."
