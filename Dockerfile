@@ -30,5 +30,4 @@ WORKDIR /home/DockerFiles
 RUN python3 -m pip install --user --upgrade pip numpy cython ipython jupyter
 RUN python3 -m pip install --user --upgrade astropy astropy-helpers healpy mpi4py numba toml
 RUN python3 -m pip install --user --upgrade pysm3
-RUN python3 -m pip install --user git+https://github.com/simonsobs/PSpipe.git
 
