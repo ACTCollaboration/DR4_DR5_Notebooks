@@ -51,7 +51,7 @@ function stop_docker() {
     if [ ! -z ${cid_file} ]; then
         cid_value=$(cat ${cid_file})
 
-        docker commit ${cid_value} mayamkay/docker_test:latest > /dev/null 2>&1
+        docker commit ${cid_value} mayamkay/docker_testrun_0.0:latest > /dev/null 2>&1
         docker rm ${cid_value} > /dev/null 2>&1
     fi
     return 0
