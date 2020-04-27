@@ -31,6 +31,8 @@ function start_docker() {
     [[ -f ${cid_file} ]] && rm -f ${cid_file}
 
     local docker_options="-it -p 8888:8888"
+
+    docker run $(echo ${docker_options}) mayamkay/docker_test:latest /bin/bash
     return 0
 }
 
@@ -38,6 +40,8 @@ function stop_docker() {
     msg_notice "Stopping ACT docker."
     if [ ! -z ${cid_file} ]; then
         cid_value=$(cat ${cid_file})
+
+        docker commit ${cid_value} mayamkay/docker_test:latest > /dev/null 2>&1
         docker rm ${cid_value} > /dev/null 2>&1
     fi
     return 0
@@ -46,7 +50,7 @@ function stop_docker() {
 function main() {
     prepare_workspace
     start_docker
-    stop_docker
+    stop_dockers
 }
 
 main
