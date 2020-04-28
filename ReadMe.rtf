@@ -1,74 +1,35 @@
-{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf500
-{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red0\green0\blue0;
-\red0\green0\blue0;\red0\green0\blue0;}
-{\*\expandedcolortbl;;\cssrgb\c0\c1\c1;\cssrgb\c100000\c100000\c99985\c0;\cssrgb\c0\c1\c1;
-\cssrgb\c0\c0\c0;\cssrgb\c0\c1\c1;}
-{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
-{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid101\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
-{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid201\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}}
-{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}}
-\margl1440\margr1440\vieww19320\viewh15400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+This repository allows users to run and access Advanced ACT’s library Pixell and run the Jupyter notebook tutorials.
 
-\f0\fs32 \cf2 \cb3 This repository allows users to run and access Advanced ACT\'92s library Pixell and run the Jupyter notebook tutorials.
-\fs36 \
+Note: 
 
-\fs24 \
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+In order for the notebooks to run fully you’ll need to have all of the data products downloaded and located in the ‘data’ folder.  The local data folder will mount to the container so you can download the data you want to use and place it in the folder before starting.
 
-\fs28 \cf4 \cb3 \CocoaLigature0 Note: 
-\fs24 \
-\
-In order for the notebooks to run fully you\'92ll need to have all of the data products downloaded and located in the \'91data\'92 folder.  The local data folder will mount to the container so you can download the data you want to use and place it in the folder before starting.\
-\
-\pard\pardeftab720\sl380\partightenfactor0
+To run the entirety of this notebook you will need to have the following data products downloaded:
+	•	ACT + Planck Coadded map : "act_planck_s08_s18_cmb_f150_night_map_I.fits"
+	•	 Planck Map : "HFI_SkyMap_143_2048_R2.02_halfmission-1.fits"
+	•	Cluster catalog : 'E-D56Clusters.fits'
+	•	 List of Messier objects : "messier_objs.csv"
+	•	 Lensing Map : "mc_corrected_realKappaCoadd_s14&15_deep56New.fits"
+	•	 Compton-$y$ : "tilec_single_tile_deep56_comptony_map_v1.2.0_joint.fits"
+	•	 CMB + kSZ : "tilec_single_tile_deep56_cmb_map_v1.2.0_joint.fits"
+	•	 CMB + kSZ with tSZ deprojected : "tilec_single_tile_deep56_cmb_deprojects_comptony_map_v1.2.0_joint.fits"
 
-\fs28 \cf4 \cb3 \expnd0\expndtw0\kerning0
-\CocoaLigature1 \outl0\strokewidth0 \strokec5 To run the entirety of this notebook you will need to have the following data products downloaded:
-\fs24 \
-\pard\tx220\tx720\pardeftab720\li720\fi-720\sl380\partightenfactor0
-\ls1\ilvl0\cf4 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec5 ACT + Planck Coadded map : "act_planck_s08_s18_cmb_f150_night_map_I.fits"\
-\ls1\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec5  Planck Map : "HFI_SkyMap_143_2048_R2.02_halfmission-1.fits"\
-\ls1\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec5 Cluster catalog : 'E-D56Clusters.fits'\
-\ls1\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec5  List of Messier objects : "messier_objs.csv"\
-\ls1\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec5  Lensing Map : "mc_corrected_realKappaCoadd_s14&15_deep56New.fits"\
-\ls1\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec5  Compton-$y$ : "tilec_single_tile_deep56_comptony_map_v1.2.0_joint.fits"\
-\ls1\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec5  CMB + kSZ : "tilec_single_tile_deep56_cmb_map_v1.2.0_joint.fits"\
-\ls1\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec5  CMB + kSZ with tSZ deprojected : "tilec_single_tile_deep56_cmb_deprojects_comptony_map_v1.2.0_joint.fits"\
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
-\cf4 \cb3 \kerning1\expnd0\expndtw0 \CocoaLigature0 \outl0\strokewidth0 \
-####################################################\
-\
+####################################################
 
-\fs32 \cf2 \cb3 \CocoaLigature1 To run and set up Pixell and the tutorial:\
+To run and set up Pixell and the tutorial:
 
-\fs24 \
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
-\cf2 \cb3 1) Install and run docker\
-\
-2) Clone this repository and then open terminal.\
-\
-3) In terminal run:\
-\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
-\ls2\ilvl0\cf2 {\listtext	\uc0\u8259 	}\cf6 \cb3 \CocoaLigature0 docker build -t mallabykay/pixell:1.0 .\
-\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
-\ls3\ilvl0\cf6 \CocoaLigature1 {\listtext	\uc0\u8259 	}\CocoaLigature0 docker run -it \'97p 8888:8888 \'97rm mallabykay/pixell:1.0\
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
-\cf6     At this point the docker container is running and you can launch Jupiter notebook in order to run the tutorial\
-\
-4) Launch Jupiter notebook to run tutorial\
-	\cf4 \cb3 jupyter notebook --ip 0.0.0.0 --no-browser\
-\
-	Navigate to the python notebooks and run them.\
-\
-\
-}
+1) Install and run docker
+
+2) Clone this repository and then open terminal.
+
+3) In terminal run:
+	⁃	docker build -t mallabykay/pixell:1.0 .
+	⁃	docker run -it —p 8888:8888 —rm mallabykay/pixell:1.0
+    At this point the docker container is running and you can launch Jupiter notebook in order to run the tutorial
+
+4) Launch Jupiter notebook to run tutorial
+	jupyter notebook --ip 0.0.0.0 --no-browser
+
+	Navigate to the python notebooks and run them.
+
+
