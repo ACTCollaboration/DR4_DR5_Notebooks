@@ -22,9 +22,10 @@ To run and set up Pixell and the tutorial:
 
 2) Clone this repository and then open terminal.
 
-3) In terminal run:
+3) In terminal navigate to the cloned repository and run:
 	⁃	docker build -t mallabykay/pixell:1.0 .
-	⁃	docker run -it —p 8888:8888 —rm mallabykay/pixell:1.0
+	This first command compiles the neccesary packages and will take some time to run (~ 6 minutes)
+	⁃	docker run -it -p 8888:8888 --rm mallabykay/pixell:1.0
     At this point the docker container is running and you can launch Jupiter notebook in order to run the tutorial
 
 4) Launch Jupiter notebook to run tutorial
