@@ -47,7 +47,7 @@ ADD /Advanced_ACT_DR4_Combined_data_products.ipynb Advanced_ACT_DR4_Combined_dat
 
 ADD /Data data
 
-EXPOSE 8080
+EXPOSE 8888
 
 #CMD ["jupyter", "notebook", "--port=8888", "--no-browser", "--ip=0.0.0.0", "--allow-root"]
 
