@@ -25,7 +25,7 @@ RUN apt-get update && apt-get install -y \
         vim                              \
         wget
 
-RUN useradd -m -U mayamkay
+RUN useradd -m -U AdvACT
 RUN mkdir home/workspace
 WORKDIR /usr/home/workspace
 
@@ -40,7 +40,8 @@ RUN CC=gcc python3 setup.py install
 
 WORKDIR /usr/home/workspace
 
-USER mayamkay
+RUN chown AdvACT /usr/home/workspace
+USER AdvACT
 
 # Add data files and notebook
 ADD /Advanced_ACT_DR4_Combined_data_products.ipynb Advanced_ACT_DR4_Combined_data_products.ipynb
@@ -49,7 +50,7 @@ ADD /Data data
 
 EXPOSE 8888
 
-#CMD ["jupyter", "notebook", "--port=8888", "--no-browser", "--ip=0.0.0.0", "--allow-root"]
+#CMD ["jupyter", "notebook", "--port=8888", "--no-browser", "--ip=0.0.0.0"s, "--allow-root"]
 
 
 
