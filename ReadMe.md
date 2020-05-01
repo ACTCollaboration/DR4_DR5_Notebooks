@@ -1,11 +1,11 @@
-This repository allows users to run and access Advanced ACT’s library Pixell and run the Jupyter notebook tutorials.
+## This repository allows users to run and access Advanced ACT’s library Pixell and run the Jupyter notebook tutorials.
 
 Note: 
 
 In order for the notebooks to run fully you’ll need to have all of the data products downloaded and located in a file on your computer. 
 The location and name of this file will be linked to the container
 
-To run the entirety of this notebook you will need to have the following data products downloaded:
+### To run the entirety of this notebook you will need to have the following data products downloaded:
 
 - ACT + Planck Coadded map : "act_planck_s08_s18_cmb_f150_night_map_I.fits"
 - Planck Map : "HFI_SkyMap_143_2048_R2.02_halfmission-1.fits"
@@ -16,9 +16,9 @@ To run the entirety of this notebook you will need to have the following data pr
 - CMB + kSZ : "tilec_single_tile_deep56_cmb_map_v1.2.0_joint.fits"
 - CMB + kSZ with tSZ deprojected : "tilec_single_tile_deep56_cmb_deprojects_comptony_map_v1.2.0_joint.fits"
 
-####################################################
+--------------
 
-To run and set up Pixell and the tutorial:
+### To run and set up Pixell and the tutorial:
 
 1) Install and run docker
 
