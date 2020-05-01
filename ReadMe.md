@@ -25,10 +25,10 @@ The location and name of this file will be linked to the container
 2) Clone this repository and then open terminal.
 
 3) In terminal navigate to the cloned repository and run:
-   - docker build -t mallabykay/pixell:1.0 .
+   - docker build -t AdvACT/tutorials:1.0 .
    
     This first command compiles the neccesary packages and will take some time to run (~ 6 minutes)
-   - docker run -it -p 8888:8888 -v Path_to_Local_data:/usr/home/workspace/data --rm mallabykay/pixell:1.0
+   - docker run -it -p 8888:8888 -v Path_to_Local_data:/usr/home/workspace/data --rm AdvACT/tutorials:1.0
 	
     Here "Path_to_local_data" Must be replaced with the path to the data folder on your machine that contains the relevant maps
     At this point the docker container is running and you can launch Jupiter notebook in order to run the tutorial
