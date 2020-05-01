@@ -6,14 +6,15 @@ In order for the notebooks to run fully you’ll need to have all of the data pr
 The location and name of this file will be linked to the container
 
 To run the entirety of this notebook you will need to have the following data products downloaded:
-	•	ACT + Planck Coadded map : "act_planck_s08_s18_cmb_f150_night_map_I.fits"
-	•	 Planck Map : "HFI_SkyMap_143_2048_R2.02_halfmission-1.fits"
-	•	Cluster catalog : 'E-D56Clusters.fits'
-	•	 List of Messier objects : "messier_objs.csv"
-	•	 Lensing Map : "mc_corrected_realKappaCoadd_s14&15_deep56New.fits"
-	•	 Compton-$y$ : "tilec_single_tile_deep56_comptony_map_v1.2.0_joint.fits"
-	•	 CMB + kSZ : "tilec_single_tile_deep56_cmb_map_v1.2.0_joint.fits"
-	•	 CMB + kSZ with tSZ deprojected : "tilec_single_tile_deep56_cmb_deprojects_comptony_map_v1.2.0_joint.fits"
+
+- ACT + Planck Coadded map : "act_planck_s08_s18_cmb_f150_night_map_I.fits"
+- Planck Map : "HFI_SkyMap_143_2048_R2.02_halfmission-1.fits"
+- Cluster catalog : 'E-D56Clusters.fits'
+- List of Messier objects : "messier_objs.csv"
+- Lensing Map : "mc_corrected_realKappaCoadd_s14&15_deep56New.fits"
+- Compton-$y$ : "tilec_single_tile_deep56_comptony_map_v1.2.0_joint.fits"
+- CMB + kSZ : "tilec_single_tile_deep56_cmb_map_v1.2.0_joint.fits"
+- CMB + kSZ with tSZ deprojected : "tilec_single_tile_deep56_cmb_deprojects_comptony_map_v1.2.0_joint.fits"
 
 ####################################################
 
