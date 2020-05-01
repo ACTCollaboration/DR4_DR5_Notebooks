@@ -37,8 +37,9 @@ The location and name of this file will be linked to the container
 
 	Navigate to the python notebooks and run them.
 
+---
 
-Trouble Shooting Jupyter notebook launch:
+#### Trouble Shooting Jupyter notebook launch:
 - if the jupyter notebook link asks for a token to authenticate open a second terminal window and type:
 	- jupyter notebook list
   This will give a list of running jupyter notebooks that should look like this:
