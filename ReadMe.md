@@ -5,8 +5,9 @@ Note:
 In order for the notebooks to run fully you’ll need to have all of the data products downloaded and located in a file on your computer. 
 The location and name of this file will be linked to the container
 
-### To run the entirety of this notebook you will need to have the following data products downloaded:
+### To run the entirety of these notebooks you will need to have the following data products downloaded:
 
+#### To Run 'Advanced_ACT_DR4_Combined_data_products.ipynb'
 - ACT + Planck Coadded map : "act_planck_s08_s18_cmb_f150_night_map_I.fits"
 - Planck Map : "HFI_SkyMap_143_2048_R2.02_halfmission-1.fits"
 - Cluster catalog : 'E-D56Clusters.fits'
@@ -15,6 +16,12 @@ The location and name of this file will be linked to the container
 - Compton-$y$ : "tilec_single_tile_deep56_comptony_map_v1.2.0_joint.fits"
 - CMB + kSZ : "tilec_single_tile_deep56_cmb_map_v1.2.0_joint.fits"
 - CMB + kSZ with tSZ deprojected : "tilec_single_tile_deep56_cmb_deprojects_comptony_map_v1.2.0_joint.fits"
+
+#### To Run "Advanced_ACT_DR4_Map_Splits_with_Power_Spectrum_analysis.ipynb"
+- Sample Adv ACT patch without sources, set 1: "act_dr4_s15_D8_pa2_f150_nohwp_night_3pass_4way_set1_map_srcfree.fits"
+- Sample Adv ACT patch without sources, set 2: "act_dr4_s15_D8_pa2_f150_nohwp_night_3pass_4way_set2_map_srcfree.fits"
+- Corresponding source map: "act_dr4_s15_D8_pa2_f150_nohwp_night_3pass_4way_set2_srcs.fits"
+- Beam: "s15_pa2_f150_nohwp_night_beam_tform_instant_cmbspec.txt"
 
 --------------
 
