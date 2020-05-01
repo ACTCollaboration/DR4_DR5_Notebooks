@@ -1,0 +1,24 @@
+﻿M,NGC,Type,Mag.,Size (arcmin),Distance (ly),RA,Declination,Con,Viewing Season,Common Name
+M1,1952,Sn,8.4,6x4,6300,5h 34.5m,+22° 01′,Tau,winter,Crab Nebula
+M8,6523,Di,6.0,90x40,5200,18h 03.8m,-24° 23′,Sgr,summer,Lagoon Nebula
+M16,6611,Oc,6.4,7,7000,18h 18.8m,-13° 47′,Ser,summer,Eagle Nebula
+M17,6618,Di,7.0,11,5000,18h 20.8m,-16° 11′,Sgr,summer,Omega Nebula
+M20,6514,Di,9.0,28,5200,18h 02.6m,-23° 02′,Sgr,summer,Trifid Nebula
+M42,1976,Di,4.0,85x60,1600,5h 35.4m,-05° 27′,Ori,winter,Great Nebula in Orion
+M43,1982,Di,9.0,20x15,1600,5h 35.6m,-05° 16′,Ori,winter,De Mairan's Nebula
+M46,2437,Oc,6.0,27,5400,7h 41.8m,-14° 49′,Pup,winter,
+M58,4579,Ba,9.7,5.5x4.5,60 million,12h 37.7m,+11° 49′,Vir,spring,
+M61,4303,Sp,9.7,6x5.5,60 million,12h 21.9m,+04° 28′,Vir,spring,
+M65,3623,Sp,9.3,8x1.5,35 million,11h 18.9m,+13° 05′,Leo,spring,
+M66,3627,Sp,8.9,8x2.5,35 million,11h 20.2m,+12° 59′,Leo,spring,
+M67,2682,Oc,6.1,30,2700,8h 50.4m,+11° 49′,Cnc,winter,
+M74,628,Sp,9.4,10.2x9.5,35 million,1h 36.7m,+15° 47′,Psc,autumn,
+M77,1068,Sp,8.9,7x6,60 million,2h 42.7m,+00° 02′,Cet,autumn,
+M78,2068,Di,8.3,8x6,1600,5h 46.7m,+00° 03′,Ori,winter,
+M84,4374,Ln,9.1,5,60 million,12h 25.1m,+12° 53′,Vir,spring,
+M87,4486,El,8.6,7,60 million,12h 30.8m,+12° 24′,Vir,spring,
+M88,4501,Sp,9.6,7x4,60 million,12h 32.1m,+14° 26′,Com,spring,
+M89,4552,El,9.8,4,60 million,12h 35.7m,+12° 33′,Vir,spring,
+M90,4569,Sp,9.5,9.5x4.5,60 million,12h 36.8m,+13° 10′,Vir,spring,
+M99,4254,Sp,9.9,5.4x4.8,60 million,12h 18.9m,+14° 26′,Com,spring,
+M100,4321,Sp,9.3,7x6,60 million,12h 23m,+15° 50′,Com,spring,
