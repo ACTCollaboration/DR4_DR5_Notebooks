@@ -46,7 +46,7 @@ USER AdvACT
 # Add data files and notebook
 ADD /Advanced_ACT_DR4_Combined_data_products.ipynb Advanced_ACT_DR4_Combined_data_products.ipynb
 
-Add /Advanced_ACT_DR4_Map_Splits_with_Power_Spectrum_analysis.ipynb Advanced_ACT_DR4_Map_Splits_with_Power_Spectrum_analysis.ipynb
+ADD /Advanced_ACT_DR4_Map_Splits_with_Power_Spectrum_analysis.ipynb Advanced_ACT_DR4_Map_Splits_with_Power_Spectrum_analysis.ipynb
 
 ADD /Data data
 
