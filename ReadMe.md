@@ -27,7 +27,8 @@ The location and name of this file will be linked to the container
 
 ### To run and set up Pixell and the tutorial:
 
-1) Install and run docker
+1) Install and run [docker](https://www.docker.com/)
+   - Create a Docker account and then sign in
 
 2) Clone this repository and then open terminal.
 
@@ -35,15 +36,18 @@ The location and name of this file will be linked to the container
    - docker build -t AdvACT/tutorials:1.0 .
    
     This first command compiles the neccesary packages and will take some time to run (~ 6 minutes)
+    
    - docker run -it -p 8888:8888 -v Path_to_Local_data:/usr/home/workspace/data --rm AdvACT/tutorials:1.0
 	
     Here "Path_to_local_data" Must be replaced with the path to the data folder on your machine that contains the relevant maps
-    At this point the docker container is running and you can launch Jupiter notebook in order to run the tutorial
+    At this point the docker container is running and you can launch Jupiter notebook in order to run the tutorial.
 
 4) Launch Jupiter notebook to run tutorial
    - jupyter notebook --ip 0.0.0.0 --no-browser
    
-   - Navigate to the python notebooks and run them.
+   - In the terminal you should now see a link that you can copy and paste into a browser.  The link will open up jupyter notebook and you'll be able to navigate to the notebooks and run them in the container.
+   
+   - You can also create new notebooks or add other data sets to the local directory if you wish to.
 
 ---
 
