@@ -1,5 +1,7 @@
 ## This repository allows users to run and access Advanced ACT’s library Pixell and run the Jupyter notebook tutorials.
-
+---
+### The 'Test' folder contains the same content but split into multiple notebooks that link to each other and may be easier to handle.
+---
 Note: 
 
 In order for the notebooks to run fully you’ll need to have all of the data products downloaded and located in a file on your computer. 
