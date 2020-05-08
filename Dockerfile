@@ -45,8 +45,8 @@ RUN chown AdvACT /usr/home/workspace
 USER AdvACT
 
 # Add data files and notebooks to the container we will later link a local directory to the 'data' directory in the container
-ADD /Advanced_ACT_DR4_Combined_data_products.ipynb Advanced_ACT_DR4_Combined_data_products.ipynb
-ADD /Advanced_ACT_DR4_Map_Splits_with_Power_Spectrum_analysis.ipynb Advanced_ACT_DR4_Map_Splits_with_Power_Spectrum_analysis.ipynb
+ADD /Previous_Notebooks previous_notebooks
+ADD /Tutorials tutorials
 ADD /Data data
 
 # Expose a port to run the notebook on later
