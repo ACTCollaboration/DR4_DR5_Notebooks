@@ -40,7 +40,7 @@ The location and name of this file will be linked to the container
 2) Clone this repository and then open terminal.
 
 3) In terminal navigate to the cloned repository and run:
-   - docker build -t AdvACT/tutorials:1.0 .
+   - docker build -t advact/tutorials:1.0 .
    
     This first command compiles the neccesary packages and will take some time to run (~ 6 minutes)
     
