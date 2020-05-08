@@ -49,7 +49,7 @@ The location and name of this file will be linked to the container
     Here "Path_to_local_data" Must be replaced with the path to the data folder on your machine that contains the relevant maps
     At this point the docker container is running and you can launch Jupiter notebook in order to run the tutorial.
 
-4) Launch Jupiter notebook to run tutorial
+4) Launch Jupiter notebook
    - jupyter notebook --ip 0.0.0.0 --no-browser
    
    - In the terminal you should now see a link that you can copy and paste into a browser.  The link will open up jupyter notebook and you'll be able to navigate to the notebooks and run them in the container.
@@ -63,7 +63,12 @@ The location and name of this file will be linked to the container
 		http://localhost:8888/?token=0d66c7b877535a9511ebe70d230f5ed65df1e9a0ac4f1144 :: /Users/.... Folder Path
 	
 	Copy the text after 'token=' and before the ' :: /Users...' into the token request box and that should launch the notebook.
-
+	
+5) Run Tutorials:
+   - To check your data has correctly linked open the data directory, you should see a list of the relevant files.
+   
+   - Navigate to the Tutorials folder and start with the 1st notebook which serves as an indtroduction and provides an overview of the tutorials.
+   
 
    
 Note: You can also create new notebooks or add other data sets to the local directory that will automatically become available in the container.
