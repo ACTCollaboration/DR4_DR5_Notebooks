@@ -4,8 +4,6 @@ Adv ACT's Data Release 4 includes intensity and polarization maps covering close
 
 The notebooks are implemented using a Docker Image which installs Pixell in a container and allows users to easily install the Pixell library.  However, if users are interested in performing more in depth analyses using Pixell we encourage you to fully install the library following the instructions found [here](https://github.com/simonsobs/pixell). 
 
-
-### The 'Test' folder contains the same content but split into multiple notebooks that link to each other and may be easier to handle.
 ---
 Note: 
 
