@@ -69,6 +69,8 @@ The location and name of this file will be linked to the container
    
 Note: You can also create new notebooks or add other data sets to the local directory that will automatically become available in the container.
 
+When in the container if you wish to save work or data locally simply save them to the 'data/' folder that you linked with your local data when launching the container.
+
 
 
 
