@@ -44,6 +44,9 @@ The location and name of this file will be linked to the container
 	
     Here "Path_to_local_data" Must be replaced with the path to the data folder on your machine that contains the relevant maps
     At this point the docker container is running and you can launch Jupiter notebook in order to run the tutorial.
+    
+    If you don't want to connect the container to your loacl machine you can run theo following command instead.
+    - docker run -it -p 8888:8888  --rm advact/tutorials:1.0
 
 4) Launch Jupiter notebook
    - jupyter notebook --ip 0.0.0.0 --no-browser
