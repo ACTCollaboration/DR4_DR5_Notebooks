@@ -23,7 +23,9 @@ The location and name of this file will be linked to the container
 - Corresponding source map: "act_dr4_s15_D8_pa2_f150_nohwp_night_3pass_4way_set2_srcs.fits"
 - Beam: "s15_pa2_f150_nohwp_night_beam_tform_instant_cmbspec.txt"
 
-** The Planck map can be found [here](https://irsa.ipac.caltech.edu/data/Planck/release_2/all-sky-maps/maps/HFI_SkyMap_143_2048_R2.02_halfmission-1.fits) and the act products will be located on [LAMBDA](https://lambda.gsfc.nasa.gov/product/act/).  In the mean time if you would need help getting these ACT products contact mayamkay@umich.edu.
+** The Planck map can be found [here](https://irsa.ipac.caltech.edu/data/Planck/release_2/all-sky-maps/maps/HFI_SkyMap_143_2048_R2.02_halfmission-1.fits) and the act products will be located on [LAMBDA](https://lambda.gsfc.nasa.gov/product/act/).  They can also be found in this [google drive](https://drive.google.com/drive/folders/16ErVuAGbmhyaAFM12i9v_aNAWyb-2Ppz?usp=sharing)
+
+For questions or comments pertaining to these notebooks contact Maya Mallaby-Kay (mayamkay@umich.edu).
 
 --------------
 
