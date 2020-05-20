@@ -2,7 +2,7 @@
 ---
 Adv ACT's Data Release 4 includes intensity and polarization maps covering close to half the sky as well as a variety of other data products.  These data products are described in some detail in the Python Notebook Tutorials presented here.  The tutorials also introduce users to the Plate Carree maps used for the AdvACT data products as well as the python library, Pixell, used to handle the maps.  
 
-The notebooks are implemented using a Docker Image which installs Pixell in a container and allows users to easily install the Pixell library.  However, if users are interested in performing more in depth analyses using Pixell we encourage you to fully install the library following the instructions found [here](https://github.com/simonsobs/pixell). 
+The notebooks are implemented using a Docker Image which installs Pixell in a container and allows users to easily install the Pixell library.  However, if users are interested in performing more in-depth analyses using Pixell we encourage you to fully install the library following the instructions found [here](https://github.com/simonsobs/pixell). 
 
 ---
 Note: 
@@ -47,10 +47,10 @@ For questions or comments pertaining to these notebooks contact Maya Mallaby-Kay
     Here "Path_to_local_data" Must be replaced with the path to the data folder on your machine that contains the relevant maps
     At this point the docker container is running and you can launch Jupiter notebook in order to run the tutorial.
     
-    If you don't want to connect the container to your loacl machine you can run theo following command instead.
+    If you don't want to connect the container to your local machine you can run the following command instead.
     - docker run -it -p 8888:8888  --rm advact/tutorials:1.0
 
-4) Launch Jupiter notebook
+4) Launch Jupyter notebook
    - jupyter notebook --ip 0.0.0.0 --no-browser
    
    - In the terminal you should now see a link that you can copy and paste into a browser.  The link will open up jupyter notebook and you'll be able to navigate to the notebooks and run them in the container.
