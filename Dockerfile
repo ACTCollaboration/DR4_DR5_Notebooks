@@ -45,8 +45,7 @@ RUN chown AdvACT /usr/home/workspace
 USER AdvACT
 
 # Add data files and notebooks to the container we will later link a local directory to the 'data' directory in the container
-ADD /Previous_Notebooks previous_notebooks
-ADD /Tutorials tutorials
+ADD /Data\ Release\ Notebooks data_Release_notebooks
 ADD /Data data
 
 # Expose a port to run the notebook on later
