@@ -45,7 +45,7 @@ For questions or comments pertaining to these notebooks contact Maya Mallaby-Kay
    - docker run -it -p 8888:8888 -v [Path_to_Local_data]:/usr/home/workspace/data --rm advact/tutorials:1.0
 	
     Here "Path_to_local_data" Must be replaced with the path to the data folder on your machine that contains the relevant maps
-    At this point the docker container is running and you can launch Jupiter notebook in order to run the tutorial.
+    At this point the docker container is running and you can launch Jupyter notebook in order to run the tutorial.
     
     If you don't want to connect the container to your local machine you can run the following command instead.
     - docker run -it -p 8888:8888  --rm advact/tutorials:1.0
