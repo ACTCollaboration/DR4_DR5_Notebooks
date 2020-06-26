@@ -2,6 +2,13 @@
 ---
 Adv ACT's Data Release 4 includes intensity and polarization maps covering close to half the sky as well as a variety of other data products.  These data products are described in some detail in the Python Notebook Tutorials presented here.  The tutorials also introduce users to the Plate Carree maps used for the AdvACT data products as well as the python library, Pixell, used to handle the maps.  
 
+### Dependencies 
+- [Pixell](https://github.com/simonsobs/pixell/tree/master/pixell)
+- [pyactlike](https://github.com/ACTCollaboration/pyactlike)
+- [Healpy](https://github.com/healpy/healpy)
+
+## Installing and Running the Notebooks
+
 The notebooks are implemented using a Docker Image which installs Pixell in a container and allows users to easily install the Pixell library.  However, if users are interested in performing more in-depth analyses using Pixell we encourage you to fully install the library following the instructions found [here](https://github.com/simonsobs/pixell). 
 
 ---
@@ -23,7 +30,7 @@ The location and name of this file will be linked to the container
 - Corresponding source map: "act_dr4_s15_D8_pa2_f150_nohwp_night_3pass_4way_set2_srcs.fits"
 - Beam: "s15_pa2_f150_nohwp_night_beam_tform_instant_cmbspec.txt"
 
-** The Planck map can be found [here](https://irsa.ipac.caltech.edu/data/Planck/release_2/all-sky-maps/maps/HFI_SkyMap_143_2048_R2.02_halfmission-1.fits) and the act products will be located on [LAMBDA](https://lambda.gsfc.nasa.gov/product/act/).  They can also be found in this [google drive](https://drive.google.com/drive/folders/16ErVuAGbmhyaAFM12i9v_aNAWyb-2Ppz?usp=sharing)
+** The Planck map can be found [here](https://irsa.ipac.caltech.edu/data/Planck/release_2/all-sky-maps/maps/HFI_SkyMap_143_2048_R2.02_full.fits) and the act products will be located on [LAMBDA](https://lambda.gsfc.nasa.gov/product/act/).  They can also be found in this [google drive](https://drive.google.com/drive/folders/16ErVuAGbmhyaAFM12i9v_aNAWyb-2Ppz?usp=sharing)
 
 For questions or comments pertaining to these notebooks contact Maya Mallaby-Kay (mayamkay@umich.edu).
 
@@ -44,8 +51,8 @@ For questions or comments pertaining to these notebooks contact Maya Mallaby-Kay
     
    - docker run -it -p 8888:8888 -v [Path_to_Local_data]:/usr/home/workspace/data --rm advact/tutorials:1.0
 	
-    Here "Path_to_local_data" Must be replaced with the path to the data folder on your machine that contains the relevant maps
-    At this point the docker container is running and you can launch Jupyter notebook in order to run the tutorial.
+    Here "Path_to_local_data" Must be replaced with the path to the data folder on your machine that contains the relevant maps.  For some users you may need to explicitly give Docker permission to access the folders on your computer.  In order to do so open the settings in Docker desktop and adjust the sharing settings as needed.
+    At this point the docker container is running and you can launch Jupiter notebook in order to run the tutorial.
     
     If you don't want to connect the container to your local machine you can run the following command instead.
     - docker run -it -p 8888:8888  --rm advact/tutorials:1.0

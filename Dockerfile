@@ -39,13 +39,18 @@ WORKDIR /usr/home/workspace/pixell
 RUN CC=gcc python3 setup.py build_ext -i
 RUN CC=gcc python3 setup.py install
 
+# Install pyactlike which is used for the likelihood
+# RUN git clone https://github.com/ACTCollaboration/pyactlike.git
+# WORKDIR /usr/home/workspace/pyactlike
+# RUN pip install . --user
+
 # Return to the workspace directory, make AdvACT the owner of the directory and switch from root to AdvACT user
 WORKDIR /usr/home/workspace
 RUN chown AdvACT /usr/home/workspace
 USER AdvACT
 
 # Add data files and notebooks to the container we will later link a local directory to the 'data' directory in the container
-ADD /Data\ Release\ Notebooks data_Release_notebooks
+ADD /Notebooks Notebooks
 ADD /Data data
 
 # Expose a port to run the notebook on later
