@@ -19,7 +19,7 @@ In order for the notebooks to run fully you’ll need to have all of the data pr
 The location and name of this file will be linked to the container.  
 
 ### Download the neccesary data products
-To download the neccesary data products run :
+The links to all of the products used in these notebooks have been compiled in the pul_data.txt file which makes it simple to download the data products using wget. This may take some time due to the number of files but can be run in the background while you set up the container.  To pull the data using the text file and wget you just need to run: 
 
 	wget -i pull_data.txt
 	
