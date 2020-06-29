@@ -33,8 +33,8 @@ For the downgraded maps run:
 	wget downgraded_map_link
 
 The full list of ACT DR4 data products can be found on LAMBDA [here](https://lambda.gsfc.nasa.gov/product/act/)
-```
-will get rid of this list once we're live since the txt file above pulls them all
+```diff
++ will get rid of this list once we're live since the txt file above pulls them all
 
 ### To run the entirety of these notebooks you will need to have the following data products downloaded:
 - ACT + Planck Coadded map : "act_planck_dr4.01_s08s16_AA_f150_night_map.fits"
@@ -84,7 +84,7 @@ For questions or comments pertaining to these notebooks contact Maya Mallaby-Kay
 
 4) Launch Jupyter notebook
    
-   	jupyter notebook --ip 0.0.0.0 --no-browser
+   		jupyter notebook --ip 0.0.0.0 --no-browser
    
    - In the terminal you should now see a link that you can copy and paste into a browser.  The link will open up jupyter notebook and you'll be able to navigate to the notebooks and run them in the container.
    
