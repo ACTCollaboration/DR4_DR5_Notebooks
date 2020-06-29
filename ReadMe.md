@@ -3,9 +3,10 @@
 Adv ACT's Data Release 4 includes intensity and polarization maps covering close to half the sky as well as a variety of other data products.  These data products are described in some detail in the Python Notebook Tutorials presented here.  The tutorials also introduce users to the Plate Carree maps used for the AdvACT data products as well as the python library, Pixell, used to handle the maps.  
 
 ### Dependencies 
-- [Pixell](https://github.com/simonsobs/pixell/tree/master/pixell)
+- [Pixell](https://github.com/simonsobs/pixell/)
 - [pyactlike](https://github.com/ACTCollaboration/pyactlike)
 - [Healpy](https://github.com/healpy/healpy)
+- astropy, numpy, scipy, matplotlib
 
 ## Installing and Running the Notebooks
 
@@ -18,17 +19,19 @@ In order for the notebooks to run fully you’ll need to have all of the data pr
 The location and name of this file will be linked to the container
 
 ### To run the entirety of these notebooks you will need to have the following data products downloaded:
-- ACT + Planck Coadded map : "act_planck_s08_s18_cmb_f150_night_map_I.fits"
-- Planck Map : "HFI_SkyMap_143_2048_R2.02_halfmission-1.fits"
+- ACT + Planck Coadded map : "act_planck_dr4.01_s08s16_AA_f150_night_map.fits"
+or the lower resolution (and thus smaller) version "act_planck_dr4.01_s08s16_AA_f150_night_map_dg_I.fits"
+- Planck Map : "HFI_SkyMap_143_2048_R2.02_full.fits"
 - Cluster catalog : 'E-D56Clusters.fits'
-- Lensing Map : "mc_corrected_realKappaCoadd_s14&15_deep56New.fits"
-- Compton-$y$ : "tilec_single_tile_deep56_comptony_map_v1.2.0_joint.fits"
+- Lensing Map : "act_planck_dr4.01_s14s15_BN_lensing_kappa_baseline.fits"
+- Compton-y : "tilec_single_tile_deep56_comptony_map_v1.2.0_joint.fits"
 - CMB + kSZ : "tilec_single_tile_deep56_cmb_map_v1.2.0_joint.fits"
 - CMB + kSZ with tSZ deprojected : "tilec_single_tile_deep56_cmb_deprojects_comptony_map_v1.2.0_joint.fits"
 - Sample Adv ACT patch without sources, set 1: "act_dr4_s15_D8_pa2_f150_nohwp_night_3pass_4way_set1_map_srcfree.fits"
 - Sample Adv ACT patch without sources, set 2: "act_dr4_s15_D8_pa2_f150_nohwp_night_3pass_4way_set2_map_srcfree.fits"
 - Corresponding source map: "act_dr4_s15_D8_pa2_f150_nohwp_night_3pass_4way_set2_srcs.fits"
 - Beam: "s15_pa2_f150_nohwp_night_beam_tform_instant_cmbspec.txt"
+
 
 ** The Planck map can be found [here](https://irsa.ipac.caltech.edu/data/Planck/release_2/all-sky-maps/maps/HFI_SkyMap_143_2048_R2.02_full.fits) and the act products will be located on [LAMBDA](https://lambda.gsfc.nasa.gov/product/act/).  They can also be found in this [google drive](https://drive.google.com/drive/folders/16ErVuAGbmhyaAFM12i9v_aNAWyb-2Ppz?usp=sharing)
 
