@@ -3,9 +3,10 @@
 Adv ACT's Data Release 4 includes intensity and polarization maps covering close to half the sky as well as a variety of other data products.  These data products are described in some detail in the Python Notebook Tutorials presented here.  The tutorials also introduce users to the Plate Carree maps used for the AdvACT data products as well as the python library, Pixell, used to handle the maps.  
 
 ### Dependencies 
-- [Pixell](https://github.com/simonsobs/pixell/tree/master/pixell)
+- [Pixell](https://github.com/simonsobs/pixell/)
 - [pyactlike](https://github.com/ACTCollaboration/pyactlike)
 - [Healpy](https://github.com/healpy/healpy)
+- astropy, numpy, scipy, matplotlib
 
 ## Installing and Running the Notebooks
 
