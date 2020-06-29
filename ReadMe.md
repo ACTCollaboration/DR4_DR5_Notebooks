@@ -24,7 +24,7 @@ or the lower resolution (and thus smaller) version "act_planck_dr4.01_s08s16_AA_
 - Planck Map : "HFI_SkyMap_143_2048_R2.02_full.fits"
 - Cluster catalog : 'E-D56Clusters.fits'
 - Lensing Map : "act_planck_dr4.01_s14s15_BN_lensing_kappa_baseline.fits"
-- Compton-$y$ : "tilec_single_tile_deep56_comptony_map_v1.2.0_joint.fits"
+- Compton-y : "tilec_single_tile_deep56_comptony_map_v1.2.0_joint.fits"
 - CMB + kSZ : "tilec_single_tile_deep56_cmb_map_v1.2.0_joint.fits"
 - CMB + kSZ with tSZ deprojected : "tilec_single_tile_deep56_cmb_deprojects_comptony_map_v1.2.0_joint.fits"
 - Sample Adv ACT patch without sources, set 1: "act_dr4_s15_D8_pa2_f150_nohwp_night_3pass_4way_set1_map_srcfree.fits"
