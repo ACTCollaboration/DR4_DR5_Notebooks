@@ -16,7 +16,25 @@ The notebooks are implemented using a Docker Image which installs Pixell and the
 Note: 
 
 In order for the notebooks to run fully you’ll need to have all of the data products downloaded and located in a file on your computer. 
-The location and name of this file will be linked to the container
+The location and name of this file will be linked to the container.  
+
+### Download the neccesary data products
+To download the neccesary data products run :
+
+	wget -i pull_data.txt
+	
+The above command will pull all of the data products with the exception of the coadded maps due to the size of these files.  For the coadded map we provide users with two options, the original full resolution maps which include I, Q, and U components but are 10 GB or a downgraded intensity only map which 220 MB and will also work for these notebooks.
+
+For the full maps run:
+
+	wget full_map_link
+For the downgraded maps run:
+
+	wget downgraded_map_link
+
+The full list of ACT DR4 data products can be found on LAMBDA [here](https://lambda.gsfc.nasa.gov/product/act/)
+```
+will get rid of this list once we're live since the txt file above pulls them all
 
 ### To run the entirety of these notebooks you will need to have the following data products downloaded:
 - ACT + Planck Coadded map : "act_planck_dr4.01_s08s16_AA_f150_night_map.fits"
@@ -33,7 +51,9 @@ or the lower resolution (and thus smaller) version "act_planck_dr4.01_s08s16_AA_
 - Beam: "s15_pa2_f150_nohwp_night_beam_tform_instant_cmbspec.txt"
 
 
-** The Planck map can be found [here](https://irsa.ipac.caltech.edu/data/Planck/release_2/all-sky-maps/maps/HFI_SkyMap_143_2048_R2.02_full.fits) and the act products will be located on [LAMBDA](https://lambda.gsfc.nasa.gov/product/act/).  They can also be found in this [google drive](https://drive.google.com/drive/folders/16ErVuAGbmhyaAFM12i9v_aNAWyb-2Ppz?usp=sharing)
+** The Planck map can be found [here](https://irsa.ipac.caltech.edu/data/Planck/release_2/all-sky-maps/maps/HFI_SkyMap_143_2048_R2.02_full.fits) .  They can also be found in this [google drive](https://drive.google.com/drive/folders/16ErVuAGbmhyaAFM12i9v_aNAWyb-2Ppz?usp=sharing) 
+
+```
 
 For questions or comments pertaining to these notebooks contact Maya Mallaby-Kay (mayamkay@umich.edu).
 
@@ -48,27 +68,31 @@ For questions or comments pertaining to these notebooks contact Maya Mallaby-Kay
 2) Clone this repository and then open terminal.
 
 3) In terminal navigate to the cloned repository and run:
-   - docker build -t advact/tutorials:1.0 .
+	
+		docker build -t advact/tutorials:1.0 .
    
     This first command compiles the neccesary packages and will take some time to run (~ 6 minutes)
     
-   - docker run -it -p 8888:8888 -v [Path_to_Local_data]:/usr/home/workspace/data --rm advact/tutorials:1.0
+		docker run -it -p 8888:8888 -v [Path_to_Local_data]:/usr/home/workspace/data --rm advact/tutorials:1.0
 	
     Here "Path_to_local_data" Must be replaced with the path to the data folder on your machine that contains the relevant maps.  For some users you may need to explicitly give Docker permission to access the folders on your computer.  In order to do so open the settings in Docker desktop and adjust the sharing settings as needed.
     At this point the docker container is running and you can launch Jupiter notebook in order to run the tutorial.
     
     If you don't want to connect the container to your local machine you can run the following command instead.
-    - docker run -it -p 8888:8888  --rm advact/tutorials:1.0
+    
+    	docker run -it -p 8888:8888  --rm advact/tutorials:1.0
 
 4) Launch Jupyter notebook
-   - jupyter notebook --ip 0.0.0.0 --no-browser
+   
+   	jupyter notebook --ip 0.0.0.0 --no-browser
    
    - In the terminal you should now see a link that you can copy and paste into a browser.  The link will open up jupyter notebook and you'll be able to navigate to the notebooks and run them in the container.
    
    - If that deosn't work open your browser and navigate to 
-   	- localhost:8888/
+   	localhost:8888/
    - When prompted for a token copy and paste the token from the url or find it using the terminal by typing:
-   	- jupyter notebook list
+   
+   		jupyter notebook list
   	This will give a list of running jupyter notebooks that should look like this:
    		Currently running servers:
 		http://localhost:8888/?token=0d66c7b877535a9511ebe70d230f5ed65df1e9a0ac4f1144 :: /Users/.... Folder Path
