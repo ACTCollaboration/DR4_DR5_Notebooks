@@ -92,12 +92,13 @@ For questions or comments pertaining to these notebooks contact Maya Mallaby-Kay
    	localhost:8888/
    - When prompted for a token copy and paste the token from the url or find it using the terminal by typing:
    
-   		jupyter notebook list
+   			jupyter notebook list
 		
   	This will give a list of running jupyter notebooks that should look like this:
-   		Currently running servers:
+   		
+	Currently running servers:
 		
-		http://localhost:8888/?token=0d66c7b877535a9511ebe70d230f5ed65df1e9a0ac4f1144 :: /Users/.... Folder Path
+	http://localhost:8888/?token=0d66c7b877535a9511ebe70d230f5ed65df1e9a0ac4f1144 :: /Users/.... Folder Path
 	
 	Copy the text after 'token=' and before the ' :: /Users...' into the token request box and that should launch the notebook.
 	
