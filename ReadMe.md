@@ -37,23 +37,7 @@ The full list of ACT DR4 data products can be found on LAMBDA [here](https://lam
 + will get rid of this list once we're live since the txt file above pulls them all
 
 ### To run the entirety of these notebooks you will need to have the following data products downloaded:
- ACT + Planck Coadded map : "act_planck_dr4.01_s08s16_AA_f150_night_map.fits"
-or the lower resolution (and thus smaller) version "act_planck_dr4.01_s08s16_AA_f150_night_map_dg_I.fits"
- Planck Map : "HFI_SkyMap_143_2048_R2.02_full.fits"
- Cluster catalog : 'E-D56Clusters.fits'
- Lensing Map : "act_planck_dr4.01_s14s15_BN_lensing_kappa_baseline.fits"
- Compton-y : "tilec_single_tile_deep56_comptony_map_v1.2.0_joint.fits"
- CMB + kSZ : "tilec_single_tile_deep56_cmb_map_v1.2.0_joint.fits"
- CMB + kSZ with tSZ deprojected : "tilec_single_tile_deep56_cmb_deprojects_comptony_map_v1.2.0_joint.fits"
- Sample Adv ACT patch without sources, set 1: "act_dr4_s15_D8_pa2_f150_nohwp_night_3pass_4way_set1_map_srcfree.fits"
- Sample Adv ACT patch without sources, set 2: "act_dr4_s15_D8_pa2_f150_nohwp_night_3pass_4way_set2_map_srcfree.fits"
- Corresponding source map: "act_dr4_s15_D8_pa2_f150_nohwp_night_3pass_4way_set2_srcs.fits"
- Beam: "s15_pa2_f150_nohwp_night_beam_tform_instant_cmbspec.txt"
 
-
-** The Planck map can be found [here](https://irsa.ipac.caltech.edu/data/Planck/release_2/all-sky-maps/maps/HFI_SkyMap_143_2048_R2.02_full.fits) .  They can also be found in this [google drive](https://drive.google.com/drive/folders/16ErVuAGbmhyaAFM12i9v_aNAWyb-2Ppz?usp=sharing) 
-
-```
 
 For questions or comments pertaining to these notebooks contact Maya Mallaby-Kay (mayamkay@umich.edu).
 
