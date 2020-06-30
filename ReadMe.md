@@ -119,13 +119,13 @@ When in the container if you wish to save work or data locally simply save them 
 
 ## References:
 
-Aiola, S., Calabrese, E., Loic, M., & Naess, S. 2020, ApJS, 1, 1
-Choi, S., Hasselfield, M., Ho, P., Koopman, B., & Lungu, M.2020, ApJS
-Darwish, O., Madhavacheril, M. S., Sherwin, B., et al. 2020, arXiv:2004.01139 [astro-ph.CO](https://arxiv.org/abs/2004.01139)
-Han et al. 2020, In preparation, 1
-Hilton et al. 2020, In preparation, 1
-Madhavacheril, M. S., Hill, J. C., Naess, S., et al. 2019,arXiv:1911.05717 [astro-ph.CO](https://arxiv.org/abs/1911.05717)
-Naess et al. 2020, In preparation, 1
+* Aiola, S., Calabrese, E., Loic, M., & Naess, S. 2020, ApJS, 1, 1
+* Choi, S., Hasselfield, M., Ho, P., Koopman, B., & Lungu, M.2020, ApJS
+* Darwish, O., Madhavacheril, M. S., Sherwin, B., et al. 2020, arXiv:2004.01139 [astro-ph.CO](https://arxiv.org/abs/2004.01139)
+* Han et al. 2020, In preparation, 1
+* Hilton et al. 2020, In preparation, 1
+* Madhavacheril, M. S., Hill, J. C., Naess, S., et al. 2019,arXiv:1911.05717 [astro-ph.CO](https://arxiv.org/abs/1911.05717)
+* Naess et al. 2020, In preparation, 1
 
 
 
