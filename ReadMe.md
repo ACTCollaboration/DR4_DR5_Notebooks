@@ -1,4 +1,4 @@
-## This repository allows users to run and access Advanced ACT’s library Pixell and run the Jupyter notebook tutorials associated with Data Release 4.
+## This repository allows users to run and access Advanced ACT?s library Pixell and run the Jupyter notebook tutorials associated with Data Release 4.
 ---
 Adv ACT's Data Release 4 includes intensity and polarization maps covering close to half the sky as well as a variety of other data products.  These data products are described in some detail in the Python Notebook Tutorials presented here.  The tutorials also introduce users to the Plate Carree maps used for the AdvACT data products as well as the python library, Pixell, used to handle the maps.  
 
@@ -15,7 +15,7 @@ The notebooks are implemented using a Docker Image which installs Pixell and the
 ---
 Note: 
 
-In order for the notebooks to run fully you’ll need to have all of the data products downloaded and located in a file on your computer. 
+In order for the notebooks to run fully you?ll need to have all of the data products downloaded and located in a file on your computer. 
 The location and name of this file will be linked to the container.  
 
 ### Download the neccesary data products
@@ -37,6 +37,7 @@ The full list of ACT DR4 data products can be found on LAMBDA [here](https://lam
 + will get rid of this list once we're live since the txt file above pulls them all
 
 ### To run the entirety of these notebooks you will need to have the following data products downloaded:
+
  ACT + Planck Coadded map : "act_planck_dr4.01_s08s16_AA_f150_night_map.fits"
 or the lower resolution (and thus smaller) version "act_planck_dr4.01_s08s16_AA_f150_night_map_dg_I.fits"
  Planck Map : "HFI_SkyMap_143_2048_R2.02_full.fits"
@@ -54,7 +55,6 @@ or the lower resolution (and thus smaller) version "act_planck_dr4.01_s08s16_AA_
 ** The Planck map can be found [here](https://irsa.ipac.caltech.edu/data/Planck/release_2/all-sky-maps/maps/HFI_SkyMap_143_2048_R2.02_full.fits) .  They can also be found in this [google drive](https://drive.google.com/drive/folders/16ErVuAGbmhyaAFM12i9v_aNAWyb-2Ppz?usp=sharing) 
 
 ```
-
 For questions or comments pertaining to these notebooks contact Maya Mallaby-Kay (mayamkay@umich.edu).
 
 --------------
@@ -112,6 +112,20 @@ For questions or comments pertaining to these notebooks contact Maya Mallaby-Kay
 Note: You can also create new notebooks or add other data sets to the local directory that will automatically become available in the container.
 
 When in the container if you wish to save work or data locally simply save them to the 'data/' folder that you linked with your local data when launching the container.
+
+
+
+
+
+## References:
+
+Aiola, S., Calabrese, E., Loic, M., & Naess, S. 2020, ApJS, 1, 1
+Choi, S., Hasselfield, M., Ho, P., Koopman, B., & Lungu, M.2020, ApJS
+Darwish, O., Madhavacheril, M. S., Sherwin, B., et al. 2020, arXiv:2004.01139 [astro-ph.CO](https://arxiv.org/abs/2004.01139)
+Han et al. 2020, In preparation, 1
+Hilton et al. 2020, In preparation, 1
+Madhavacheril, M. S., Hill, J. C., Naess, S., et al. 2019,arXiv:1911.05717 [astro-ph.CO](https://arxiv.org/abs/1911.05717)
+Naess et al. 2020, In preparation, 1
 
 
 
