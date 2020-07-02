@@ -1,0 +1,51 @@
+omegabh2,      \Omega_b h^2
+omegach2,      \Omega_c h^2
+theta,100\theta_{MC}
+tau,\tau
+logA,{\rm{ln}}(10^{10} A_s)
+ns,n_s
+yp,y^{\rm P}
+H0*,H_0
+omegal*,\Omega_\Lambda
+omegam*,\Omega_m
+omegamh2*,\Omega_m h^2
+omeganuh2*,\Omega_\nu h^2
+omegamh3*,\Omega_m h^3
+sigma8*,\sigma_8
+s8omegamp5*,\sigma_8 \Omega_m^{0.5}
+s8omegamp25*,\sigma_8 \Omega_m^{0.25}
+s8h5*,\sigma_8/h^{0.5}
+rmsdeflect*,\langle d^2\rangle^{1/2}
+zrei*,z_{\rm re}
+A*,10^9 A_s
+clamp*,10^9 A_s e^{-2\tau}
+DL40*,D_{40}
+DL220*,D_{220}
+DL810*,D_{810}
+DL1420*,D_{1420}
+DL2000*,D_{2000}
+ns02*,"n_{s,0.002}"
+yheused*,Y_P
+YpBBN*,Y_P^{\rm{BBN}}
+DHBBN*,10^5D/H
+age*,{\rm{Age}}/{\rm{Gyr}}
+zstar*,z_*
+rstar*,r_*
+thetastar*,100\theta_*
+DAstar*,D_{\rm{A}}/{\rm{Gpc}}
+zdrag*,z_{\rm{drag}}
+rdrag*,r_{\rm{drag}}
+kd*,k_{\rm D}
+thetad*,100\theta_{\rm{D}}
+zeq*,z_{\rm{eq}}
+keq*,k_{\rm{eq}}
+thetaeq*,100\theta_{\rm{eq}}
+thetarseq*,"100\theta_{\rm{s,eq}}"
+rsDv057*,r_{\rm{drag}}/D_V(0.57)
+Hubble057*,H(0.57)
+DA057*,D_A(0.57)
+FAP057*,F_{\rm AP}(0.57)
+fsigma8z057*,f\sigma_8(0.57)
+sigma8z057*,\sigma_8(0.57)
+chi2_ACTPol*,\chi^2_{\rm ACTPol}
+chi2_prior*,\chi^2_{\rm prior}

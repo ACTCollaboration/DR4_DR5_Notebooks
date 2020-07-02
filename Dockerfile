@@ -31,7 +31,9 @@ RUN mkdir home/workspace
 WORKDIR /usr/home/workspace
 
 # Install python packages
-RUN pip3 install astropy astropy-helpers cython healpy ipython jupyter numpy pip mpi4py numba toml image pymaster
+RUN pip3 install astropy astropy-helpers cython healpy ipython jupyter numpy pip mpi4py numba toml image getdist camb
+
+RUN pip3 install pymaster
 
 # Install Pixell using the gcc compiler 
 RUN git clone https://github.com/simonsobs/pixell.git 
