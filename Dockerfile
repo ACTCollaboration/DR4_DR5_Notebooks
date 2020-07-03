@@ -42,6 +42,7 @@ RUN CC=gcc python3 setup.py build_ext -i
 RUN CC=gcc python3 setup.py install
 
 # Install Nawrapper
+WORKDIR /usr/home/workspace
 RUN git clone https://github.com/xzackli/nawrapper
 WORKDIR /usr/home/workspace/nawrapper
 RUN python3 setup.py build_ext -i
