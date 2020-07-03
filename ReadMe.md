@@ -6,7 +6,8 @@ Adv ACT's Data Release 4 includes intensity and polarization maps covering close
 - [Pixell](https://github.com/simonsobs/pixell/)
 - [pyactlike](https://github.com/ACTCollaboration/pyactlike)
 - [Healpy](https://github.com/healpy/healpy)
-- astropy, numpy, scipy, matplotlib
+- [getdist](https://github.com/cmbant/getdist)
+- astropy, numpy, scipy, matplotlib, CAMB 
 
 ## Installing and Running the Notebooks
 
@@ -19,7 +20,9 @@ In order for the notebooks to run fully you'fll need to have all of the data pro
 The location and name of this file will be linked to the container.  
 
 ### Download the neccesary data products
-The links to all of the products used in these notebooks have been compiled in the pul_data.txt file which makes it simple to download the data products using wget. This may take some time due to the number of files but can be run in the background while you set up the container.  To pull the data using the text file and wget you just need to run: 
+The links to all of the products used in these notebooks have been compiled in the pul_data.txt file which makes it simple to download the data products using wget. This may take some time due to the number of files but can be run in the background while you set up the container.  Feel free to add any other data products you'd like to pull to the text file or comment out ones you don't want to use.
+
+To pull the data using the text file and wget you just need to run: 
 
 	wget -i pull_data.txt
 	
@@ -120,13 +123,21 @@ When in the container if you wish to save work or data locally simply save them 
 ## References:
 
 * Aiola, S., Calabrese, E., Loic, M., & Naess, S. 2020, ApJS, 1, 1
+* Akrami, Y., Arroja, F., Ashdown, M., et al. 2018, arXiv e-prints,arXiv:1807.06205
+* Astropy Collaboration, Robitaille, T. P., Tollerud, E. J., et al.2013, [A&A, 558, A33](http://dx.doi.org/10.1051/0004-6361/201322068)
+* Bennett, C. L., Kogut, A., Hinshaw, G., et al. 1994, [ApJ, 436, 423](http://dx.doi.org/10.1086/174918)
+* Bennett, C. L., Halpern, M., Hinshaw, G., et al. 2003, [ApJS, 148,1](http://dx.doi.org/10.1086/377253)
 * Choi, S., Hasselfield, M., Ho, P., Koopman, B., & Lungu, M.2020, ApJS
-* Darwish, O., Madhavacheril, M. S., Sherwin, B., et al. 2020, arXiv:2004.01139 [astro-ph.CO](https://arxiv.org/abs/2004.01139)
+* Darwish, O., Madhavacheril, M. S., Sherwin, B., et al. 2020, [arXiv:2004.01139 [astro-ph.CO]](http://arxiv.org/abs/2004.01139)
+* Górski, K. M., Hivon, E., Banday, A. J., et al. 2005, [ApJ, 622, 759](http://dx.doi.org/10.1086/427976)
 * Han et al. 2020, In preparation, 1
 * Hilton et al. 2020, In preparation, 1
-* Madhavacheril, M. S., Hill, J. C., Naess, S., et al. 2019,arXiv:1911.05717 [astro-ph.CO](https://arxiv.org/abs/1911.05717)
+* Hunter, J. D. 2007, [Computing in Science & Engineering, 9, 90](http://dx.doi.org/10.1109/MCSE.2007.55)
+* Lewis, A. 2019, [arXiv:1910.13970 [astro-ph.IM]](http://arxiv.org/abs/1910.13970)
+* Lewis, A., Challinor, A., & Lasenby, A. 2000, [ApJ, 538, 473](http://dx.doi.org/10.1086/309179)
+* Madhavacheril, M. S., Hill, J. C., Naess, S., et al. 2019, [arXiv:1911.05717 [astro-ph.CO]](http://arxiv.org/abs/1911.05717)
 * Naess et al. 2020, In preparation, 1
-
-
-
+* Price-Whelan, A. M., Sip ̋ocz, B. M., Günther, H. M., et al. 2018, [AJ, 156, 123](http://dx.doi.org/10.3847/1538-3881/aabc4f)
+* Reinecke, M., & Seljebotn, D. S. 2013, [A&A, 554, A112](http://dx.doi.org/10.1051/0004-6361/201321494)
+* Zonca, A., Singer, L., Lenz, D., et al. 2019, [Journal of OpenSource Software, 4, 1298](http://dx.doi.org/10.21105/joss.01298)
 
