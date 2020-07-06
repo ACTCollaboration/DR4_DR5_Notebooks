@@ -26,14 +26,21 @@ To pull the data using the text file and wget you just need to run:
 
 	wget -i pull_data.txt
 	
+If you are working on a mac and don't have wget set up you can get it using homebrew or use curl instead:
+	
+	xargs -n 1 curl -0 < pull_data.txt
+	
 The above command will pull all of the data products with the exception of the coadded maps due to the size of these files.  For the coadded map we provide users with two options, the original full resolution maps which include I, Q, and U components but are 10 GB or a downgraded intensity only map which 220 MB and will also work for these notebooks.
 
 For the full maps run:
 
 	wget full_map_link
+	
 For the downgraded maps run:
 
 	wget downgraded_map_link
+
+Again for th above commands if you wish to use curl instead of wget just replace the word wget with curl.
 
 The full list of ACT DR4 data products can be found on LAMBDA [here](https://lambda.gsfc.nasa.gov/product/act/)
 ```diff
