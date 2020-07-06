@@ -7,6 +7,7 @@ Adv ACT's Data Release 4 includes intensity and polarization maps covering close
 - [pyactlike](https://github.com/ACTCollaboration/pyactlike)
 - [Healpy](https://github.com/healpy/healpy)
 - [getdist](https://github.com/cmbant/getdist)
+- [nawrapper](https://github.com/xzackli/nawrapper)
 - astropy, numpy, scipy, matplotlib, CAMB 
 
 ## Installing and Running the Notebooks
