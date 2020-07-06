@@ -7,6 +7,7 @@ Adv ACT's Data Release 4 includes intensity and polarization maps covering close
 - [pyactlike](https://github.com/ACTCollaboration/pyactlike)
 - [Healpy](https://github.com/healpy/healpy)
 - [getdist](https://github.com/cmbant/getdist)
+- [nawrapper](https://github.com/xzackli/nawrapper)
 - astropy, numpy, scipy, matplotlib, CAMB 
 
 ## Installing and Running the Notebooks
@@ -22,18 +23,27 @@ The location and name of this file will be linked to the container.
 ### Download the neccesary data products
 The links to all of the products used in these notebooks have been compiled in the pul_data.txt file which makes it simple to download the data products using wget. This may take some time due to the number of files but can be run in the background while you set up the container.  Feel free to add any other data products you'd like to pull to the text file or comment out ones you don't want to use.
 
-To pull the data using the text file and wget you just need to run: 
+To pull the data using the text file and curl or wget you will want to place the pull_data file in the folder you wish to download the data into, if you're using the docker set up you'll want to avoid placing the data into the data folder initially as doing so will cause docker to add the data directly to the container which isn't ideal for large quantaties of data.  Instead just place the text file in a separate folder and then navigate to that folder in your terminal.
+
+To download the files using wget run: 
 
 	wget -i pull_data.txt
+	
+If you are working on a mac and don't have wget set up you can get it using homebrew or use curl instead:
+	
+	xargs -n 1 curl -0 < pull_data.txt
 	
 The above command will pull all of the data products with the exception of the coadded maps due to the size of these files.  For the coadded map we provide users with two options, the original full resolution maps which include I, Q, and U components but are 10 GB or a downgraded intensity only map which 220 MB and will also work for these notebooks.
 
 For the full maps run:
 
 	wget full_map_link
+	
 For the downgraded maps run:
 
 	wget downgraded_map_link
+
+Again for th above commands if you wish to use curl instead of wget just replace the word wget with curl.
 
 The full list of ACT DR4 data products can be found on LAMBDA [here](https://lambda.gsfc.nasa.gov/product/act/)
 ```diff
