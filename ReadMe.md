@@ -22,7 +22,9 @@ The location and name of this file will be linked to the container.
 ### Download the neccesary data products
 The links to all of the products used in these notebooks have been compiled in the pul_data.txt file which makes it simple to download the data products using wget. This may take some time due to the number of files but can be run in the background while you set up the container.  Feel free to add any other data products you'd like to pull to the text file or comment out ones you don't want to use.
 
-To pull the data using the text file and wget you just need to run: 
+To pull the data using the text file and curl or wget you will want to place the pull_data file in the folder you wish to download the data into, if you're using the docker set up you'll want to avoid placing the data into the data folder initially as doing so will cause docker to add the data directly to the container which isn't ideal for large quantaties of data.  Instead just place the text file in a separate folder and then navigate to that folder in your terminal.
+
+To download the files using wget run: 
 
 	wget -i pull_data.txt
 	
