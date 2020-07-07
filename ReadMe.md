@@ -2,13 +2,6 @@
 ---
 Adv ACT's Data Release 4 includes intensity and polarization maps covering close to half the sky as well as a variety of other data products.  These data products are described in some detail in the Python Notebook Tutorials presented here.  The tutorials also introduce users to the Plate Carree maps used for the AdvACT data products as well as the python library, Pixell, used to handle the maps.  
 
-### Dependencies 
-- [Pixell](https://github.com/simonsobs/pixell/)
-- [pyactlike](https://github.com/ACTCollaboration/pyactlike)
-- [Healpy](https://github.com/healpy/healpy)
-- [getdist](https://github.com/cmbant/getdist)
-- [nawrapper](https://github.com/xzackli/nawrapper)
-- astropy, numpy, scipy, matplotlib, CAMB 
 
 ## Installing and Running the Notebooks
 
@@ -23,7 +16,9 @@ The location and name of this file will be linked to the container.
 ### Download the neccesary data products
 The links to all of the products used in these notebooks have been compiled in the pul_data.txt file which makes it simple to download the data products using wget. This may take some time due to the number of files but can be run in the background while you set up the container.  Feel free to add any other data products you'd like to pull to the text file or comment out ones you don't want to use.
 
-To pull the data using the text file and curl or wget you will want to place the pull_data file in the folder you wish to download the data into, if you're using the docker set up you'll want to avoid placing the data into the data folder initially as doing so will cause docker to add the data directly to the container which isn't ideal for large quantaties of data.  Instead just place the text file in a separate folder and then navigate to that folder in your terminal.  You'll notice we provide you with a general pull_data file which includes all of the needed files, but we've also split these into smaller groups according to the notebooks they are used for.  If you only want to run a few of the notebooks and would like to pull the data that corresponds just to those notebooks instead of the full set simply replace the filename in the next two commands with the file name corresponding to the notebook you wish to pull data for.
+To pull the data using the text file and curl or wget you will want to place the pull_data file in the folder you wish to download the data into, if you're using the docker set up you'll want to avoid placing the data into the data folder initially as doing so will cause docker to add the data directly to the container which isn't ideal for large quantaties of data.  Instead just place the text file in a separate folder and then navigate to that folder in your terminal.  
+
+You'll notice we provide you with a general pull_data file which includes all of the needed files, but we've also split these into smaller groups according to the notebooks they are used for.  If you only want to run a few of the notebooks and would like to pull the data that corresponds just to those notebooks instead of the full set simply replace the filename in the next two commands with the file name corresponding to the notebook you wish to pull data for.
 
 To download the files using wget run: 
 
@@ -72,7 +67,7 @@ For questions or comments pertaining to these notebooks contact Maya Mallaby-Kay
     If you don't want to connect the container to your local machine you can run the following command instead.
     
     	docker run -it -p 8888:8888  --rm advact/tutorials:1.0
-For future use you can launch your container by just running the docker run command, generally speaking there is no reason to rebuild the image unless you are updating it.  
+	For future use you can launch your container by just running the docker run command, generally speaking there is no reason to rebuild the image unless you are updating it.  
     
 4) Launch Jupyter notebook
    
@@ -108,6 +103,13 @@ When in the container if you wish to save work or data locally simply save them 
 
 
 
+### Dependencies 
+- [Pixell](https://github.com/simonsobs/pixell/)
+- [pyactlike](https://github.com/ACTCollaboration/pyactlike)
+- [Healpy](https://github.com/healpy/healpy)
+- [getdist](https://github.com/cmbant/getdist)
+- [nawrapper](https://github.com/xzackli/nawrapper)
+- astropy, numpy, scipy, matplotlib, CAMB 
 
 ## References:
 
