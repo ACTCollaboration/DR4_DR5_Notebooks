@@ -23,7 +23,7 @@ The location and name of this file will be linked to the container.
 ### Download the neccesary data products
 The links to all of the products used in these notebooks have been compiled in the pul_data.txt file which makes it simple to download the data products using wget. This may take some time due to the number of files but can be run in the background while you set up the container.  Feel free to add any other data products you'd like to pull to the text file or comment out ones you don't want to use.
 
-To pull the data using the text file and curl or wget you will want to place the pull_data file in the folder you wish to download the data into, if you're using the docker set up you'll want to avoid placing the data into the data folder initially as doing so will cause docker to add the data directly to the container which isn't ideal for large quantaties of data.  Instead just place the text file in a separate folder and then navigate to that folder in your terminal.
+To pull the data using the text file and curl or wget you will want to place the pull_data file in the folder you wish to download the data into, if you're using the docker set up you'll want to avoid placing the data into the data folder initially as doing so will cause docker to add the data directly to the container which isn't ideal for large quantaties of data.  Instead just place the text file in a separate folder and then navigate to that folder in your terminal.  You'll notice we provide you with a general pull_data file which includes all of the needed files, but we've also split these into smaller groups according to the notebooks they are used for.  If you only want to run a few of the notebooks and would like to pull the data that corresponds just to those notebooks instead of the full set simply replace the filename in the next two commands with the file name corresponding to the notebook you wish to pull data for.
 
 To download the files using wget run: 
 
@@ -84,17 +84,17 @@ For questions or comments pertaining to these notebooks contact Maya Mallaby-Kay
 	
 		docker build -t advact/tutorials:1.0 .
    
-    This first command compiles the neccesary packages and will take some time to run (~ 6 minutes)
+    This first command compiles the neccesary packages and will take some time to run (~ 10 minutes).  If you've built the image before it will reload it from cache instead of rebuilding everything.  The benefit of this is it will save time later on, however, if you wish to make sure you have the latest versions of the various packages you will want to add the command "--pull" to the end of the docker build command.
     
 		docker run -it -p 8888:8888 -v [Path_to_Local_data]:/usr/home/workspace/data --rm advact/tutorials:1.0
 	
     Here "Path_to_local_data" Must be replaced with the path to the data folder on your machine that contains the relevant maps.  For some users you may need to explicitly give Docker permission to access the folders on your computer.  In order to do so open the settings in Docker desktop and adjust the sharing settings as needed.
-    At this point the docker container is running and you can launch Jupiter notebook in order to run the tutorial.
-    
+    At this point the docker container is running and you can launch Jupiter notebook in order to run the tutorial.  
     If you don't want to connect the container to your local machine you can run the following command instead.
     
     	docker run -it -p 8888:8888  --rm advact/tutorials:1.0
-
+For future use you can launch your container by just running the docker run command, generally speaking there is no reason to rebuild the image unless you are updating it.  
+    
 4) Launch Jupyter notebook
    
    		jupyter notebook --ip 0.0.0.0 --no-browser
