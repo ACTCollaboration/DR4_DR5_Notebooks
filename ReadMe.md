@@ -2,12 +2,6 @@
 ---
 Adv ACT's Data Release 4 includes intensity and polarization maps covering close to half the sky as well as a variety of other data products.  These data products are described in some detail in the Python Notebook Tutorials presented here.  The tutorials also introduce users to the Plate Carree maps used for the AdvACT data products as well as the python library, Pixell, used to handle the maps.  
 
-### Dependencies 
-- [Pixell](https://github.com/simonsobs/pixell/)
-- [pyactlike](https://github.com/ACTCollaboration/pyactlike)
-- [Healpy](https://github.com/healpy/healpy)
-- [getdist](https://github.com/cmbant/getdist)
-- astropy, numpy, scipy, matplotlib, CAMB 
 
 ## Installing and Running the Notebooks
 
@@ -22,42 +16,33 @@ The location and name of this file will be linked to the container.
 ### Download the neccesary data products
 The links to all of the products used in these notebooks have been compiled in the pul_data.txt file which makes it simple to download the data products using wget. This may take some time due to the number of files but can be run in the background while you set up the container.  Feel free to add any other data products you'd like to pull to the text file or comment out ones you don't want to use.
 
-To pull the data using the text file and wget you just need to run: 
+
+To pull the data using the text file and curl or wget you will want to place the pull_data file in the folder you wish to download the data into, if you're using the docker set up you'll want to avoid placing the data into the data folder initially as doing so will cause docker to add the data directly to the container which isn't ideal for large quantaties of data.  Instead just place the text file in a separate folder and then navigate to that folder in your terminal.  
+
+You'll notice we provide you with a general pull_data file which includes all of the needed files, but we've also split these into smaller groups according to the notebooks they are used for.  If you only want to run a few of the notebooks and would like to pull the data that corresponds just to those notebooks instead of the full set simply replace the filename in the next two commands with the file name corresponding to the notebook you wish to pull data for.
+
+To download the files using wget run: 
 
 	wget -i pull_data.txt
+	
+If you are working on a mac and don't have wget set up you can get it using homebrew or use curl instead:
+	
+	xargs -n 1 curl -0 < pull_data.txt
 	
 The above command will pull all of the data products with the exception of the coadded maps due to the size of these files.  For the coadded map we provide users with two options, the original full resolution maps which include I, Q, and U components but are 10 GB or a downgraded intensity only map which 220 MB and will also work for these notebooks.
 
 For the full maps run:
 
 	wget full_map_link
+	
 For the downgraded maps run:
 
 	wget downgraded_map_link
 
+Again for th above commands if you wish to use curl instead of wget just replace the word wget with curl.
+
 The full list of ACT DR4 data products can be found on LAMBDA [here](https://lambda.gsfc.nasa.gov/product/act/)
-```diff
-+ will get rid of this list once we're live since the txt file above pulls them all
 
-### To run the entirety of these notebooks you will need to have the following data products downloaded:
-
- ACT + Planck Coadded map : "act_planck_dr4.01_s08s16_AA_f150_night_map.fits"
-or the lower resolution (and thus smaller) version "act_planck_dr4.01_s08s16_AA_f150_night_map_dg_I.fits"
- Planck Map : "HFI_SkyMap_143_2048_R2.02_full.fits"
- Cluster catalog : 'E-D56Clusters.fits'
- Lensing Map : "act_planck_dr4.01_s14s15_BN_lensing_kappa_baseline.fits"
- Compton-y : "tilec_single_tile_deep56_comptony_map_v1.2.0_joint.fits"
- CMB + kSZ : "tilec_single_tile_deep56_cmb_map_v1.2.0_joint.fits"
- CMB + kSZ with tSZ deprojected : "tilec_single_tile_deep56_cmb_deprojects_comptony_map_v1.2.0_joint.fits"
- Sample Adv ACT patch without sources, set 1: "act_dr4_s15_D8_pa2_f150_nohwp_night_3pass_4way_set1_map_srcfree.fits"
- Sample Adv ACT patch without sources, set 2: "act_dr4_s15_D8_pa2_f150_nohwp_night_3pass_4way_set2_map_srcfree.fits"
- Corresponding source map: "act_dr4_s15_D8_pa2_f150_nohwp_night_3pass_4way_set2_srcs.fits"
- Beam: "s15_pa2_f150_nohwp_night_beam_tform_instant_cmbspec.txt"
-
-
-** The Planck map can be found [here](https://irsa.ipac.caltech.edu/data/Planck/release_2/all-sky-maps/maps/HFI_SkyMap_143_2048_R2.02_full.fits) .  They can also be found in this [google drive](https://drive.google.com/drive/folders/16ErVuAGbmhyaAFM12i9v_aNAWyb-2Ppz?usp=sharing) 
-
-```
 For questions or comments pertaining to these notebooks contact Maya Mallaby-Kay (mayamkay@umich.edu).
 
 --------------
@@ -74,17 +59,17 @@ For questions or comments pertaining to these notebooks contact Maya Mallaby-Kay
 	
 		docker build -t advact/tutorials:1.0 .
    
-    This first command compiles the neccesary packages and will take some time to run (~ 6 minutes)
+    This first command compiles the neccesary packages and will take some time to run (~ 10 minutes).  If you've built the image before it will reload it from cache instead of rebuilding everything.  The benefit of this is it will save time later on, however, if you wish to make sure you have the latest versions of the various packages you will want to add the command "--pull" to the end of the docker build command.
     
 		docker run -it -p 8888:8888 -v [Path_to_Local_data]:/usr/home/workspace/data --rm advact/tutorials:1.0
 	
     Here "Path_to_local_data" Must be replaced with the path to the data folder on your machine that contains the relevant maps.  For some users you may need to explicitly give Docker permission to access the folders on your computer.  In order to do so open the settings in Docker desktop and adjust the sharing settings as needed.
-    At this point the docker container is running and you can launch Jupiter notebook in order to run the tutorial.
-    
+    At this point the docker container is running and you can launch Jupiter notebook in order to run the tutorial.  
     If you don't want to connect the container to your local machine you can run the following command instead.
     
     	docker run -it -p 8888:8888  --rm advact/tutorials:1.0
-
+	For future use you can launch your container by just running the docker run command, generally speaking there is no reason to rebuild the image unless you are updating it.  
+    
 4) Launch Jupyter notebook
    
    		jupyter notebook --ip 0.0.0.0 --no-browser
@@ -120,6 +105,15 @@ When in the container if you wish to save work or data locally simply save them 
 
 
 
+### Dependencies 
+- [Pixell](https://github.com/simonsobs/pixell/)
+- [pyactlike](https://github.com/ACTCollaboration/pyactlike)
+- [Healpy](https://github.com/healpy/healpy)
+- [getdist](https://github.com/cmbant/getdist)
+- [nawrapper](https://github.com/xzackli/nawrapper)
+- astropy, numpy, scipy, matplotlib, CAMB 
+
+
 ## References:
 
 * Aiola, S., Calabrese, E., Loic, M., & Naess, S. 2020, ApJS, 1, 1
@@ -140,8 +134,5 @@ When in the container if you wish to save work or data locally simply save them 
 * Price-Whelan, A. M., Sip ̋ocz, B. M., Günther, H. M., et al. 2018, [AJ, 156, 123](http://dx.doi.org/10.3847/1538-3881/aabc4f)
 * Reinecke, M., & Seljebotn, D. S. 2013, [A&A, 554, A112](http://dx.doi.org/10.1051/0004-6361/201321494)
 * Zonca, A., Singer, L., Lenz, D., et al. 2019, [Journal of OpenSource Software, 4, 1298](http://dx.doi.org/10.21105/joss.01298)
-
-
-
 
 
