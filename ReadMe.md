@@ -16,6 +16,7 @@ The location and name of this file will be linked to the container.
 ### Download the neccesary data products
 The links to all of the products used in these notebooks have been compiled in the pul_data.txt file which makes it simple to download the data products using wget. This may take some time due to the number of files but can be run in the background while you set up the container.  Feel free to add any other data products you'd like to pull to the text file or comment out ones you don't want to use.
 
+
 To pull the data using the text file and curl or wget you will want to place the pull_data file in the folder you wish to download the data into, if you're using the docker set up you'll want to avoid placing the data into the data folder initially as doing so will cause docker to add the data directly to the container which isn't ideal for large quantaties of data.  Instead just place the text file in a separate folder and then navigate to that folder in your terminal.  
 
 You'll notice we provide you with a general pull_data file which includes all of the needed files, but we've also split these into smaller groups according to the notebooks they are used for.  If you only want to run a few of the notebooks and would like to pull the data that corresponds just to those notebooks instead of the full set simply replace the filename in the next two commands with the file name corresponding to the notebook you wish to pull data for.
@@ -103,6 +104,7 @@ When in the container if you wish to save work or data locally simply save them 
 
 
 
+
 ### Dependencies 
 - [Pixell](https://github.com/simonsobs/pixell/)
 - [pyactlike](https://github.com/ACTCollaboration/pyactlike)
@@ -110,6 +112,7 @@ When in the container if you wish to save work or data locally simply save them 
 - [getdist](https://github.com/cmbant/getdist)
 - [nawrapper](https://github.com/xzackli/nawrapper)
 - astropy, numpy, scipy, matplotlib, CAMB 
+
 
 ## References:
 
@@ -131,4 +134,5 @@ When in the container if you wish to save work or data locally simply save them 
 * Price-Whelan, A. M., Sip ̋ocz, B. M., Günther, H. M., et al. 2018, [AJ, 156, 123](http://dx.doi.org/10.3847/1538-3881/aabc4f)
 * Reinecke, M., & Seljebotn, D. S. 2013, [A&A, 554, A112](http://dx.doi.org/10.1051/0004-6361/201321494)
 * Zonca, A., Singer, L., Lenz, D., et al. 2019, [Journal of OpenSource Software, 4, 1298](http://dx.doi.org/10.21105/joss.01298)
+
 
