@@ -29,7 +29,7 @@ If you are working on a mac and don't have wget set up you can get it using home
 	
 	xargs -n 1 curl -0 < pull_data.txt
 	
-The above command will pull all of the data products with the exception of the coadded maps due to the size of these files.  For the coadded map we provide users with two options, the original full resolution maps which include I, Q, and U components but are 10 GB or a downgraded intensity only map which 220 MB and will also work for these notebooks.
+The above command will pull all of the data products with the exception of the coadded maps due to the size of these files.  For the coadded map we provide users with two options, the original full resolution maps which include I, Q, and U components but are 10 GB, or a downgraded intensity only map which is only 220 MB and will also work for these notebooks.
 
 For the full maps run:
 
@@ -120,7 +120,8 @@ When in the container if you wish to save work or data locally simply save them 
 * Akrami, Y., Arroja, F., Ashdown, M., et al. 2018, arXiv e-prints,arXiv:1807.06205
 * Astropy Collaboration, Robitaille, T. P., Tollerud, E. J., et al.2013, [A&A, 558, A33](http://dx.doi.org/10.1051/0004-6361/201322068)
 * Bennett, C. L., Kogut, A., Hinshaw, G., et al. 1994, [ApJ, 436, 423](http://dx.doi.org/10.1086/174918)
-* Bennett, C. L., Halpern, M., Hinshaw, G., et al. 2003, [ApJS, 148,1](http://dx.doi.org/10.1086/377253)
+* Bennett, C. L., Halpern, M., Hinshaw, G., et al. 2003, [ApJS, 148, 1](http://dx.doi.org/10.1086/377253)
+* Carlstrom, J.E., Holder, G. P., Reese, E. D. 2002 [ARAA, 40, 643](https://doi.org/10.1146/annurev.astro.40.060401.093803)
 * Choi, S., Hasselfield, M., Ho, P., Koopman, B., & Lungu, M.2020, ApJS
 * Darwish, O., Madhavacheril, M. S., Sherwin, B., et al. 2020, [arXiv:2004.01139 [astro-ph.CO]](http://arxiv.org/abs/2004.01139)
 * Górski, K. M., Hivon, E., Banday, A. J., et al. 2005, [ApJ, 622, 759](http://dx.doi.org/10.1086/427976)
