@@ -1,6 +1,6 @@
-## This repository allows users to run and access Advanced ACT's library Pixell and run the Jupyter notebook tutorials associated with Data Release 4.
+## This repository allows users to run and access ACT's library Pixell and run the Jupyter notebook tutorials associated with Data Release 4.
 ---
-Adv ACT's Data Release 4 includes intensity and polarization maps covering close to half the sky as well as a variety of other data products.  These data products are described in some detail in the Python Notebook Tutorials presented here.  The tutorials also introduce users to the Plate Carree maps used for the AdvACT data products as well as the python library, Pixell, used to handle the maps.  
+ACT's Data Release 4 includes intensity and polarization maps covering close to half the sky as well as a variety of other data products.  These data products are described in some detail in the Python Notebook Tutorials presented here.  The tutorials also introduce users to the Plate Carree maps used for the ACT data products as well as the python library, Pixell, used to handle the maps.  
 
 
 ## Installing and Running the Notebooks
@@ -57,17 +57,17 @@ For questions or comments pertaining to these notebooks contact Maya Mallaby-Kay
 
 3) In terminal navigate to the cloned repository and run:
 	
-		docker build -t advact/tutorials:1.0 .
+		docker build -t act/tutorials:1.0 .
    
     This first command compiles the neccesary packages and will take some time to run (~ 10 minutes).  If you've built the image before it will reload it from cache instead of rebuilding everything.  The benefit of this is it will save time later on, however, if you wish to make sure you have the latest versions of the various packages you will want to add the command "--pull" to the end of the docker build command.
     
-		docker run -it -p 8888:8888 -v [Path_to_Local_data]:/usr/home/workspace/data --rm advact/tutorials:1.0
+		docker run -it -p 8888:8888 -v [Path_to_Local_data]:/usr/home/workspace/data --rm act/tutorials:1.0
 	
     Here "Path_to_local_data" Must be replaced with the path to the data folder on your machine that contains the relevant maps.  For some users you may need to explicitly give Docker permission to access the folders on your computer.  In order to do so open the settings in Docker desktop and adjust the sharing settings as needed.
     At this point the docker container is running and you can launch Jupiter notebook in order to run the tutorial.  
     If you don't want to connect the container to your local machine you can run the following command instead.
     
-    	docker run -it -p 8888:8888  --rm advact/tutorials:1.0
+    	docker run -it -p 8888:8888  --rm act/tutorials:1.0
 	For future use you can launch your container by just running the docker run command, generally speaking there is no reason to rebuild the image unless you are updating it.  
     
 4) Launch Jupyter notebook
