@@ -19,7 +19,7 @@ The links to all of the products used in these notebooks have been compiled in t
 
 To pull the data using the text file and curl or wget you will want to place the pull_data file in the folder you wish to download the data into, if you're using the docker set up you'll want to avoid placing the data into the data folder initially as doing so will cause docker to add the data directly to the container which isn't ideal for large quantaties of data.  Instead just place the text file in a separate folder and then navigate to that folder in your terminal.  
 
-You'll notice we provide you with a general pull_data file which includes all of the needed files, but we've also split these into smaller groups according to the notebooks they are used for.  If you only want to run a few of the notebooks and would like to pull the data that corresponds just to those notebooks instead of the full set simply replace the filename in the next two commands with the file name corresponding to the notebook you wish to pull data for.
+You'll notice we provide you with a general pull_data file which includes all of the needed files, but we've also split these into smaller groups according to the notebooks they are used for.  If you only want to run a few of the notebooks and would like to pull the data that corresponds just to those notebooks instead of the full set simply replace the filename in the next two commands with the file name corresponding to the notebook you wish to pull data for. The full dataset is around 8.5GB in size: if your internet downloads data at 5-10MBps, it will take you ~15 - 25min to download everything.
 
 To download the files using wget run: 
 
@@ -39,9 +39,9 @@ For the downgraded maps run:
 
 	wget downgraded_map_link
 
-Again for th above commands if you wish to use curl instead of wget just replace the word wget with curl.
+Again for the above commands if you wish to use curl instead of wget just replace the word wget with curl.
 
-The full list of ACT DR4 data products can be found on LAMBDA [here](https://lambda.gsfc.nasa.gov/product/act/)
+The full list of ACT DR4 data products can be found on LAMBDA [here](https://lambda.gsfc.nasa.gov/product/act/). 
 
 For questions or comments pertaining to these notebooks contact Maya Mallaby-Kay (mayamkay@umich.edu).
 
