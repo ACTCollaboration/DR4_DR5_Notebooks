@@ -23,8 +23,8 @@ RUN apt-get update && apt-get install -y \
         vim                              \
         wget
 
-# Create a user called AdvACT
-RUN useradd -m -U AdvACT
+# Create a user called actdr4
+RUN useradd -m -U actdr4
 
 # Make a new workspace
 RUN mkdir home/workspace
@@ -53,10 +53,10 @@ RUN python3 setup.py install
 # WORKDIR /usr/home/workspace/pyactlike
 # RUN pip3 install 
 
-# Return to the workspace directory, make AdvACT the owner of the directory and switch from root to AdvACT user
+# Return to the workspace directory, make actdr4 the owner of the directory and switch from root to actdr4 user
 WORKDIR /usr/home/workspace
-RUN chown AdvACT /usr/home/workspace
-USER AdvACT
+RUN chown actdr4 /usr/home/workspace
+USER actdr4
 
 # Add data files and notebooks to the container we will later link a local directory to the 'data' directory in the container
 ADD /Notebooks Notebooks
