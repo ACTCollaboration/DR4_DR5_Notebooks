@@ -1,18 +1,18 @@
 #!/bin/bash
 
 # ~~~~~~~ Notebook Ancillary Products ~~~~~~~~~~
-curl -O https://phy-act1.princeton.edu/staged/zatkins/BIN_ACTPOL_50_4_SC_low_ell
+curl -O -k https://phy-act1.princeton.edu/staged/zatkins/BIN_ACTPOL_50_4_SC_low_ell
 mkdir mcm
-curl -O https://phy-act1.princeton.edu/staged/zatkins/mcm/mcm.json
-curl -O https://phy-act1.princeton.edu/staged/zatkins/mcm/w00.bin
+curl -O -k https://phy-act1.princeton.edu/staged/zatkins/mcm/mcm.json
+curl -O -k https://phy-act1.princeton.edu/staged/zatkins/mcm/w00.bin
 
 mv ./mcm.json ./mcm/mcm.json
 mv ./w00.bin ./mcm/w00.bin
-curl -O https://phy-act1.princeton.edu/staged/zatkins/TT_cross_spectra.txt
-curl -O https://phy-act1.princeton.edu/staged/zatkins/camb_theory.dat
-curl -O https://phy-act1.princeton.edu/staged/zatkins/auto_cov_TTTT.txt
-curl -O https://phy-act1.princeton.edu/staged/zatkins/cross_cov_TTT.txt
-curl -O https://phy-act1.princeton.edu/staged/zatkins/deep56_TT_spectrum.txt
+curl -O -k https://phy-act1.princeton.edu/staged/zatkins/TT_cross_spectra.txt
+curl -O -k https://phy-act1.princeton.edu/staged/zatkins/camb_theory.dat
+curl -O -k https://phy-act1.princeton.edu/staged/zatkins/auto_cov_TTTT.txt
+curl -O -k https://phy-act1.princeton.edu/staged/zatkins/cross_cov_TTT.txt
+curl -O -k https://phy-act1.princeton.edu/staged/zatkins/deep56_TT_spectrum.txt
 
 # ~~~~ Ancillary Data Products ~~~~~~
 
