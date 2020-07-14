@@ -3,13 +3,16 @@
 
 # ~~~~~~~ Derived Maps ~~~~~~~~~~~
 # Temporarily get them from phy-act1
+echo "get the coadd maps"
+curl -O https://phy-act1.princeton.edu/staged/zatkins/act_planck_dr4.01_s08s16_AA_f150_night_map_d56_I.fits
+curl -O https://phy-act1.princeton.edu/staged/zatkins/act_planck_dr4.01_s08s16_AA_f150_night_map_dg_I.fits
 
 # ~~~~~~~ Cosmo Results ~~~~~~~~~~
 # Temp from phy-act1
 
 # ~~~~~~~ Masks ~~~~~~~~~~~~~~~~~~
 echo "getting masks"
-curl -L https://lambda.gsfc.nasa.gov/data/suborbital/ACT/ACT_dr4/ancillary_products/act_dr4.01_masks.tar.gz -o act_dr4.01_masks.tar.gz
+curl -L -O https://lambda.gsfc.nasa.gov/data/suborbital/ACT/ACT_dr4/ancillary_products/act_dr4.01_masks.tar.gz 
 
 echo "extract files"
 tar -xf act_dr4.01_masks.tar.gz masks/lensing_masks/act_dr4.01_s14s15_D56_lensing_mask.fits
@@ -26,7 +29,7 @@ rm -r masks
 
 # ~~~~ Ancillary Data Products ~~~~~~
 echo "getting window function"
-curl -L https://lambda.gsfc.nasa.gov/data/suborbital/ACT/ACT_dr4/ancillary_products/act_dr4.01_window_functions.tar.gz -o act_dr4.01_window_functions.tar.gz 
+curl -L -O https://lambda.gsfc.nasa.gov/data/suborbital/ACT/ACT_dr4/ancillary_products/act_dr4.01_window_functions.tar.gz  
 
 echo "extract files"
 tar -xf act_dr4.01_window_functions.tar.gz  window_functions/beams/act_dr4.01_s15_pa1_f150_nohwp_night_beam_tform_jitter_D56_cmbspec.txt
@@ -57,3 +60,15 @@ curl -O https://data.sdss.org/sas/dr12/boss/lss/galaxy_DR12v5_CMASSLOWZTOT_South
 # ~~~~~~~ ACT Cluster catalog ~~~~~~
 echo "Get a cluster catalog"
 curl -O https://lambda.gsfc.nasa.gov/data/suborbital/ACT/actpol_2016_lensing/E-D56Clusters.fits
+
+
+# ~~~~~~ Products from Phy-act1 ~~~~~~~~
+
+
+
+
+
+
+
+
+
