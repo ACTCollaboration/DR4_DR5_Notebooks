@@ -1,7 +1,5 @@
 #!/bin/bash
 
-alias wgetncc='wget --no-check-certificate' 
-
 # ~~~~~~~~ s13 Maps ~~~~~~~~~~~~~~~
 echo "getting the season 13 inverse variance maps"
 wget https://lambda.gsfc.nasa.gov/data/suborbital/ACT/ACT_dr4/maps/s13/act_dr4.01_s13_D6_pa1_f150_nohwp_night_3pass_4way_set{0..3}_ivar.fits
@@ -22,4 +20,4 @@ rm act_dr4.01_masks.tar.gz
 rm -r maskss
 
 # ~~~~~~~~~ Sims ~~~~~~~
-wgetncc https://phy-act1.princeton.edu/staged/zatkins/act_dr4.01_s15_D56_pa1_coadd_est_True_covsqrt.fits
+wget https://phy-act1.princeton.edu/staged/zatkins/act_dr4.01_s15_D56_pa1_coadd_est_True_covsqrt.fits
