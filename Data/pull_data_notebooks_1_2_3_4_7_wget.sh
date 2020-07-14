@@ -11,8 +11,7 @@ wget https://phy-act1.princeton.edu/staged/zatkins/act_planck_dr4.01_s08s16_AA_f
 echo "Get the Planck map"
 wget https://irsa.ipac.caltech.edu/data/Planck/release_2/all-sky-maps/maps/HFI_SkyMap_143_2048_R2.02_full.fits
 
-
-# Messier Objects
+wget https://phy-act1.princeton.edu/staged/zatkins/messier_objs.csv
 
 # ~~~~~~~ ACT Cluster catalog ~~~~~~
 echo "Get a cluster catalog"
