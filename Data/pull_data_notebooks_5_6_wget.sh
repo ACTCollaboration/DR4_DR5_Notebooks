@@ -4,10 +4,17 @@ alias wgetncc='wget --no-check-certificate'
 
 # ~~~~~~~ Derived Maps ~~~~~~~~
 
+<<<<<<< Updated upstream
 wgetncc https://phy-act1.princeton.edu/staged/zatkins/act_planck_dr4.01_s14s15_D56_lensing_kappa_baseline.fits
 wgetncc https://phy-act1.princeton.edu/staged/zatkins/tilec_single_tile_deep56_comptony_map_v1.2.0_joint.fits
 wgetncc https://phy-act1.princeton.edu/staged/zatkins/tilec_single_tile_deep56_cmb_map_v1.2.0_joint.fits
 wgetncc https://phy-act1.princeton.edu/staged/zatkins/tilec_single_tile_deep56_cmb_deprojects_comptony_map_v1.2.0_joint.fits
+=======
+wget https://phy-act1.princeton.edu/staged/zatkins/act_planck_dr4.01_s14s15_D56_lensing_kappa_baseline.fits
+wget https://phy-act1.princeton.edu/staged/zatkins/tilec_single_tile_d56_comptony_map_v1.2.0_joint.fits
+wget https://phy-act1.princeton.edu/staged/zatkins/tilec_single_tile_d56_cmb_map_v1.2.0_joint.fits
+wget https://phy-act1.princeton.edu/staged/zatkins/tilec_single_tile_d56_cmb_deprojects_comptony_map_v1.2.0_joint.fits
+>>>>>>> Stashed changes
 
 # ~~~~~~~ ACT Cluster catalog ~~~~~~
 echo "Get a cluster catalog"

@@ -8,9 +8,15 @@ echo "get lensing maps"
 wgetncc https://phy-act1.princeton.edu/staged/zatkins/act_planck_dr4.01_s14s15_D56_lensing_kappa_baseline.fits
 
 echo "get component separated maps"
+<<<<<<< Updated upstream
 wgetncc https://phy-act1.princeton.edu/staged/zatkins/tilec_single_tile_deep56_comptony_map_v1.2.0_joint.fits
 wgetncc https://phy-act1.princeton.edu/staged/zatkins/tilec_single_tile_deep56_cmb_map_v1.2.0_joint.fits
 wgetncc https://phy-act1.princeton.edu/staged/zatkins/tilec_single_tile_deep56_cmb_deprojects_comptony_map_v1.2.0_joint.fits
+=======
+wget https://phy-act1.princeton.edu/staged/zatkins/tilec_single_tile_d56_comptony_map_v1.2.0_joint.fits
+wget https://phy-act1.princeton.edu/staged/zatkins/tilec_single_tile_d56_cmb_map_v1.2.0_joint.fits
+wget https://phy-act1.princeton.edu/staged/zatkins/tilec_single_tile_d56_cmb_deprojects_comptony_map_v1.2.0_joint.fits
+>>>>>>> Stashed changes
 
 # ~~~~~~~~~ Cosmo Results ~~~~~~~~~~
 
@@ -92,6 +98,7 @@ wgetncc https://phy-act1.princeton.edu/staged/zatkins/messier_objs.csv
 wgetncc https://phy-act1.princeton.edu/staged/zatkins/camb_theory.dat
 
 
+<<<<<<< Updated upstream
 wgetncc https://phy-act1.princeton.edu/staged/zatkins/BIN_ACTPOL_50_4_SC_low_ell
 wgetncc https://phy-act1.princeton.edu/staged/zatkins/ACTPol_lcdm.paramnames.csv
 wgetncc https://phy-act1.princeton.edu/staged/zatkins/section_9_covsqrt.fits
@@ -100,6 +107,17 @@ wgetncc https://phy-act1.princeton.edu/staged/zatkins/cross_cov_TTT.txt
 wgetncc https://phy-act1.princeton.edu/staged/zatkins/TT_cross_spectra.txt
 wgetncc https://phy-act1.princeton.edu/staged/zatkins/deep56_TT_spectrum.txt
 wgetncc -r -np -R "index.html*" https://phy-act1.princeton.edu/staged/zatkins/mcm
+=======
+wget https://phy-act1.princeton.edu/staged/zatkins/BIN_ACTPOL_50_4_SC_low_ell
+wget https://phy-act1.princeton.edu/staged/zatkins/ACTPol_lcdm.paramnames.csv
+wget https://phy-act1.princeton.edu/staged/zatkins/section_9_covsqrt.fits
+wget https://phy-act1.princeton.edu/staged/zatkins/auto_cov_TTTT.txt
+wget https://phy-act1.princeton.edu/staged/zatkins/cross_cov_TTT.txt
+wget https://phy-act1.princeton.edu/staged/zatkins/TT_cross_spectra.txt
+wget https://phy-act1.princeton.edu/staged/zatkins/deep56_TT_spectrum.txt
+wget https://phy-act1.princeton.edu/staged/zatkins/deep56_kfilter_tfunc_sim.txt
+wget -r -np -R "index.html*" https://phy-act1.princeton.edu/staged/zatkins/mcm
+>>>>>>> Stashed changes
 
 
 
