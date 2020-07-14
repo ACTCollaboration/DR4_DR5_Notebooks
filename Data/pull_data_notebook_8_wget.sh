@@ -11,7 +11,7 @@ wget https://phy-act1.princeton.edu/staged/zatkins/auto_cov_TTTT.txt
 wget https://phy-act1.princeton.edu/staged/zatkins/deep56_TT_spectrum.txt
 
 echo "getting window function"
-wget --show-progress -os https://lambda.gsfc.nasa.gov/data/suborbital/ACT/ACT_dr4/ancillary_products/act_dr4.01_window_functions.tar.gz
+wget --show-progress -O https://lambda.gsfc.nasa.gov/data/suborbital/ACT/ACT_dr4/ancillary_products/act_dr4.01_window_functions.tar.gz
 
 echo "extract files"
 tar -xf act_dr4.01_window_functions.tar.gz  window_functions/beams/act_dr4.01_s15_pa1_f150_nohwp_night_beam_tform_jitter_D56_cmbspec.$
