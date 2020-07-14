@@ -1,12 +1,10 @@
 #!/bin/bash
 
-alias wgetncc='wget --no-check-certificate' 
-
 # ~~~~~~~~~ Derived Maps ~~~~~~~~
 # Temporarily get them from act-1
 echo "get the coadd maps"
-wgetncc https://phy-act1.princeton.edu/staged/zatkins/act_planck_dr4.01_s08s16_AA_f150_night_map_d56_I.fits
-wgetncc https://phy-act1.princeton.edu/staged/zatkins/act_planck_dr4.01_s08s16_AA_f150_night_map_dg_I.fits
+wget https://phy-act1.princeton.edu/staged/zatkins/act_planck_dr4.01_s08s16_AA_f150_night_map_d56_I.fits
+wget https://phy-act1.princeton.edu/staged/zatkins/act_planck_dr4.01_s08s16_AA_f150_night_map_dg_I.fits
 
 # ~~~~~~~ Non ACT Products ~~~~~~~~
 echo "Get the Planck map"
