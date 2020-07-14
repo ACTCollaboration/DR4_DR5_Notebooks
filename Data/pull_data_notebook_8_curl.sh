@@ -13,6 +13,7 @@ curl -O -k https://phy-act1.princeton.edu/staged/zatkins/camb_theory.dat
 curl -O -k https://phy-act1.princeton.edu/staged/zatkins/auto_cov_TTTT.txt
 curl -O -k https://phy-act1.princeton.edu/staged/zatkins/cross_cov_TTT.txt
 curl -O -k https://phy-act1.princeton.edu/staged/zatkins/deep56_TT_spectrum.txt
+curl -O -k https://phy-act1.princeton.edu/staged/zatkins/deep56_kfilter_tfunc_sim.txt
 
 # ~~~~ Ancillary Data Products ~~~~~~
 

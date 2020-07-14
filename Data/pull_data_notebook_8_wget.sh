@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # ~~~~~~~ Ancillary Products ~~~~~~~~~~
+
 wget https://phy-act1.princeton.edu/staged/zatkins/BIN_ACTPOL_50_4_SC_low_ell
 wget -r -np -R "index.html*" https://phy-act1.princeton.edu/staged/zatkins/mcm
 wget https://phy-act1.princeton.edu/staged/zatkins/TT_cross_spectra.txt
@@ -8,6 +9,8 @@ wget https://phy-act1.princeton.edu/staged/zatkins/camb_theory.dat
 wget https://phy-act1.princeton.edu/staged/zatkins/cross_cov_TTT.txt
 wget https://phy-act1.princeton.edu/staged/zatkins/auto_cov_TTTT.txt
 wget https://phy-act1.princeton.edu/staged/zatkins/deep56_TT_spectrum.txt
+wget https://phy-act1.princeton.edu/staged/zatkins/deep56_kfilter_tfunc_sim.txt
+
 
 echo "getting window function"
 wget --show-progress -O act_dr4.01_window_functions.tar.gz https://lambda.gsfc.nasa.gov/data/suborbital/ACT/ACT_dr4/ancillary_products/act_dr4.01_window_functions.tar.gz
