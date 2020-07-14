@@ -1,14 +1,14 @@
-
 #!/bin/bash
 
+alias wgetncc='wget --no-check-certificate' 
 # ~~~~~~~ Ancillary Products ~~~~~~~~~~
-wget https://phy-act1.princeton.edu/staged/zatkins/BIN_ACTPOL_50_4_SC_low_ell
-wget -r -np -R "index.html*" https://phy-act1.princeton.edu/staged/zatkins/mcm
-wget https://phy-act1.princeton.edu/staged/zatkins/TT_cross_spectra.txt
-wget https://phy-act1.princeton.edu/staged/zatkins/camb_theory.dat
-wget https://phy-act1.princeton.edu/staged/zatkins/cross_cov_TTT.txt
-wget https://phy-act1.princeton.edu/staged/zatkins/auto_cov_TTTT.txt
-wget https://phy-act1.princeton.edu/staged/zatkins/deep56_TT_spectrum.txt
+wgetncc https://phy-act1.princeton.edu/staged/zatkins/BIN_ACTPOL_50_4_SC_low_ell
+wgetncc -r -np -R "index.html*" https://phy-act1.princeton.edu/staged/zatkins/mcm
+wgetncc https://phy-act1.princeton.edu/staged/zatkins/TT_cross_spectra.txt
+wgetncc https://phy-act1.princeton.edu/staged/zatkins/camb_theory.dat
+wgetncc https://phy-act1.princeton.edu/staged/zatkins/cross_cov_TTT.txt
+wgetncc https://phy-act1.princeton.edu/staged/zatkins/auto_cov_TTTT.txt
+wgetncc https://phy-act1.princeton.edu/staged/zatkins/deep56_TT_spectrum.txt
 
 echo "getting window function"
 wget --show-progress -O act_dr4.01_window_functions.tar.gz https://lambda.gsfc.nasa.gov/data/suborbital/ACT/ACT_dr4/ancillary_products/act_dr4.01_window_functions.tar.gz
@@ -39,7 +39,7 @@ echo " getting the source free maps"
 wget https://lambda.gsfc.nasa.gov/data/suborbital/ACT/ACT_dr4/maps/s15/act_dr4.01_s15_D56_pa1_f150_nohwp_night_3pass_4way_set{0..3}_map_srcfree.fits
 wget https://lambda.gsfc.nasa.gov/data/suborbital/ACT/ACT_dr4/maps/s15/act_dr4.01_s15_D56_pa1_f150_nohwp_night_3pass_4way_coadd_map_srcfree.fits
 
-echo "Getting the Source maps
+echo "Getting the Source maps"
 wget https://lambda.gsfc.nasa.gov/data/suborbital/ACT/ACT_dr4/maps/s15/act_dr4.01_s15_D56_pa1_f150_nohwp_night_3pass_4way_set{0..3}_srcs.fits
 wget https://lambda.gsfc.nasa.gov/data/suborbital/ACT/ACT_dr4/maps/s15/act_dr4.01_s15_D56_pa1_f150_nohwp_night_3pass_4way_coadd_srcs.fits
 
