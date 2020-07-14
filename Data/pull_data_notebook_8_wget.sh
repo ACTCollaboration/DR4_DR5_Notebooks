@@ -11,7 +11,7 @@ wget https://phy-act1.princeton.edu/staged/zatkins/auto_cov_TTTT.txt
 wget https://phy-act1.princeton.edu/staged/zatkins/deep56_TT_spectrum.txt
 
 echo "getting window function"
-wget --show-progress -O https://lambda.gsfc.nasa.gov/data/suborbital/ACT/ACT_dr4/ancillary_products/act_dr4.01_window_functions.tar.gz
+wget --show-progress -O act_dr4.01_window_functions.tar.gz https://lambda.gsfc.nasa.gov/data/suborbital/ACT/ACT_dr4/ancillary_products/act_dr4.01_window_functions.tar.gz
 
 echo "extract files"
 tar -xf act_dr4.01_window_functions.tar.gz  window_functions/beams/act_dr4.01_s15_pa1_f150_nohwp_night_beam_tform_jitter_D56_cmbspec.$
@@ -23,7 +23,7 @@ rm -r window_functions
 
 # ~~~~~~~ Masks ~~~~~~~~~~~~~~~~~~
 echo "getting masks"
-wget --show-progress -O https://lambda.gsfc.nasa.gov/data/suborbital/ACT/ACT_dr4/ancillary_products/act_dr4.01_masks.tar.gz 
+wget --show-progress -O act_dr4.01_masks.tar.gz https://lambda.gsfc.nasa.gov/data/suborbital/ACT/ACT_dr4/ancillary_products/act_dr4.01_masks.tar.gz 
 
 tar -xf act_dr4.01_masks.tar.gz masks/source_masks/act_dr4.01_mask_s13s16_0.015mJy_5.0arcmin.fits
 tar -xf act_dr4.01_masks.tar.gz masks/footprints/act_dr4.01_D56_apo_w0.fits

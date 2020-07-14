@@ -19,7 +19,7 @@ wget https://phy-act1.princeton.edu/staged/zatkins/ACTPol_lcdm.paramnames
 
 # ~~~~ Ancillary Data Products ~~~~~~~~`
 echo "getting masks"
-wget --show-progress -O https://lambda.gsfc.nasa.gov/data/suborbital/ACT/ACT_dr4/ancillary_products/act_dr4.01_masks.tar.gz
+wget --show-progress -O act_dr4.01_masks.tar.gz https://lambda.gsfc.nasa.gov/data/suborbital/ACT/ACT_dr4/ancillary_products/act_dr4.01_masks.tar.gz
 
 echo "extract files"
 tar -xf act_dr4.01_masks.tar.gz masks/lensing_masks/act_dr4.01_s14s15_D56_lensing_mask.fits
@@ -37,7 +37,7 @@ rm act_dr4.01_masks.tar.gz
 rm -r maskss
 
 echo "getting window function"
-wget --show-progress -O https://lambda.gsfc.nasa.gov/data/suborbital/ACT/ACT_dr4/ancillary_products/act_dr4.01_window_functions.tar.gz 
+wget --show-progress -O act_dr4.01_window_functions.tar.gz  https://lambda.gsfc.nasa.gov/data/suborbital/ACT/ACT_dr4/ancillary_products/act_dr4.01_window_functions.tar.gz 
 
 echo "extract files"
 tar -xf act_dr4.01_window_functions.tar.gz  window_functions/beams/act_dr4.01_s15_pa1_f150_nohwp_night_beam_tform_jitter_D56_cmbspec.txt
