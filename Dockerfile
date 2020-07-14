@@ -64,3 +64,4 @@ ADD /Data data
 
 # Expose a port to run the notebook on later
 EXPOSE 8888
+
