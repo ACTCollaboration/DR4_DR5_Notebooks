@@ -51,8 +51,6 @@ rm -r window_functions
 
 # ~~~~~~~~ s15 Maps ~~~~~~~~~~~~~
 echo " getting the source free maps"
-https://lambda.gsfc.nasa.gov/data/suborbital/ACT/ACT_dr4/maps/s13/
-
 curl -O https://lambda.gsfc.nasa.gov/data/suborbital/ACT/ACT_dr4/maps/s15/act_dr4.01_s15_D56_pa1_f150_nohwp_night_3pass_4way_set[0-3]_map_srcfree.fits
 curl -O https://lambda.gsfc.nasa.gov/data/suborbital/ACT/ACT_dr4/maps/s15/act_dr4.01_s15_D56_pa1_f150_nohwp_night_3pass_4way_coadd_map_srcfree.fits
 
@@ -69,7 +67,7 @@ echo "getting the season 13 inverse variance maps"
 curl -O https://lambda.gsfc.nasa.gov/data/suborbital/ACT/ACT_dr4/maps/s13/act_dr4.01_s13_D6_pa1_f150_nohwp_night_3pass_4way_set[0-3]_ivar.fits
 curl -O https://lambda.gsfc.nasa.gov/data/suborbital/ACT/ACT_dr4/maps/s13/act_dr4.01_s13_D6_pa1_f150_nohwp_night_3pass_4way_coadd_ivar.fits
 
-echo "getting the season 13 source free maps
+echo "getting the season 13 source free maps"
 curl -O https://lambda.gsfc.nasa.gov/data/suborbital/ACT/ACT_dr4/maps/s13/act_dr4.01_s13_D6_pa1_f150_nohwp_night_3pass_4way_set[0-3]_map_srcfree.fits
 curl -O https://lambda.gsfc.nasa.gov/data/suborbital/ACT/ACT_dr4/maps/s13/act_dr4.01_s13_D6_pa1_f150_nohwp_night_3pass_4way_coadd_map_srcfree.fits
 

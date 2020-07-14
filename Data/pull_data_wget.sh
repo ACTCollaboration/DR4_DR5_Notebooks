@@ -34,7 +34,7 @@ mv masks/footprints/act_dr4.01_D56_apo_w0.fits ./act_dr4.01_D56_apo_w0.fits
 mv masks/footprints/act_dr4.01_D6_apo_w0.fits ./act_dr4.01_D6_apo_w0.fits
 
 rm act_dr4.01_masks.tar.gz
-rm -r maskss
+rm -r masks
 
 echo "getting window function"
 wget --show-progress -O act_dr4.01_window_functions.tar.gz  https://lambda.gsfc.nasa.gov/data/suborbital/ACT/ACT_dr4/ancillary_products/act_dr4.01_window_functions.tar.gz 
