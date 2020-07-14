@@ -111,7 +111,7 @@ When in the container if you wish to save work or data locally simply save them 
 - [Healpy](https://github.com/healpy/healpy)
 - [getdist](https://github.com/cmbant/getdist)
 - [nawrapper](https://github.com/xzackli/nawrapper)
-- astropy, numpy, scipy, matplotlib, CAMB 
+- astropy, CAMB, matplotlib, numpy, pandas, scipy  
 
 
 ## References:
