@@ -16,7 +16,7 @@ There are two options for building and running this repo: a completely local ins
 ### Download the neccesary data products 
 The links to all of the products used in these notebooks have been compiled in pull_data bash scipts which makes it simple to download the data products using wget or curl. Feel free to add any other data products you'd like to pull by adding it to the relevant pull_data file following the pre-existing format.
 
-In addition to providing pull_data scripts for the entire notebook set, we've also provided scripts that pull products for a subset of notebooks as a space-saving measure. If you only want to run a few of the notebooks, and would like to only pull data corresponding to those notebooks, simply replace the filename in the next two commands with the filename corresponding to the desired notebook(s). The full dataset is around 7.3GB in size: if your internet downloads data at 5-10MBps, it will take you ~15 - 25min to download everything.
+In addition to providing pull_data scripts for the entire notebook set, we've also provided scripts that pull products for a subset of notebooks as a space-saving measure. If you only want to run a few of the notebooks, and would like to only pull data corresponding to those notebooks, simply replace the filename in the next two commands with the filename corresponding to the desired notebook(s). The full dataset is around 7.3GB in size: if your internet downloads data at 5-10MBps, it will take you ~25 - 45 min to download everything (the slightly slower time is due to a limit on the download speed from LAMBDA).
 
 First set up a directory to hold the data products you will download. Then, execute either of the following commands in that directory:
 
@@ -89,7 +89,7 @@ Most of the packages required to run the notebooks have well documented installa
 
 	- open your terminal or command line and run:
 
- 		`docker run -d -it -p 8888:8888 --name dr4_tutorials  --rm actcollaboration/dr4_tutorials`
+ 			docker run -d -it -p 8888:8888 --name dr4_tutorials  --rm actcollaboration/dr4_tutorials
 		
 	This command connects the containers port to the local port with the `-p` flag, it names the container with the `--name` flag, it tells your system to remove the container once the session is ended with the `--rm` flag and then finally it points to the image you want to pull which is called `actcollaboration/dr4_tutorials`
 
@@ -97,7 +97,7 @@ Most of the packages required to run the notebooks have well documented installa
 
 	- We now want to move the data in the container to somewhere that's easy to find on your local machine.  We suggest creating a folder on your computer somewhere where you want to store the data for this tutorial.  The path to that folder should replace `[local_path]` in the lines below. 	
 		
-		`docker cp dr4_tutorials:/usr/home/workspace/. [local_path] && cd [local_path]/Data`
+			docker cp dr4_tutorials:/usr/home/workspace/. [local_path] && cd [local_path]/Data
    
     This command copies the contents of the image using the `cp` command to somewhere on your local machine and then we go to the data folder in that repository.
     
@@ -105,24 +105,24 @@ Most of the packages required to run the notebooks have well documented installa
 
 	- In order to run the notebooks you'll need to download the relevant data products. In the data folder of this repo you'll notice a few different scripts that have been set up to pull the correct products.  If you're on a mac you will want to use the files that have 'curl' in the name, unless you have wget set up already.  You can choose to pull all of the data products or just a subset depending on which file you choose (run `ls` for macs or `dir` for windows to check what files are available).  From there you just need to run that file using:
    
-   		`sh [pull_data_curl].sh` 
+   			sh [pull_data_curl].sh
 		
    Just replace the `[pull_data_curl]` part with the name of the file you wish to run. This procedure is the same as the local installation/download instructions. 
 5) Relaunch the container with the new data:
 
 	- Now that we have the data we just need to relaunch our container and we're ready to go.  To do so run:
 
-		`docker container stop dr4_tutorials && docker run -it -p 8888:8888 -v [local_path]:/usr/home/workspace --name dr4_tutorials --rm actcollaboration/dr4_tutorials`
+			docker container stop dr4_tutorials && docker run -it -p 8888:8888 -v [local_path]:/usr/home/workspace --name dr4_tutorials --rm actcollaboration/dr4_tutorials
 
 	- Again you need to replace `[local_path]` with the path to the folder you created earlier.  If you're on a windows machine you may need to switch the slashes in the path name to `/` (forward slashes) instead of back slashes. If the command fails on the path name the first time then just run the second half of it with the corrected path name:
 		
-		`docker run -it -p 8888:8888 -v [local_path]:/usr/home/workspace --name dr4_tutorials --rm actcollaboration/dr4_tutorials`
+			docker run -it -p 8888:8888 -v [local_path]:/usr/home/workspace --name dr4_tutorials --rm actcollaboration/dr4_tutorials
 
 6) Launch Jupyter Notebook:
 
 	- You will now be in the container and should be able to launch the jupyter notebooks by just running 
 		
-		`jupyter notebook --ip 0.0.0.0`
+			jupyter notebook --ip 0.0.0.0
 	
 
    - In the terminal you should now see a link that you can copy and paste into a browser.  The link will open up jupyter notebook and you'll be able to navigate to the notebooks and run them in the container.
@@ -131,7 +131,7 @@ Most of the packages required to run the notebooks have well documented installa
    	localhost:8888/
    - When prompted for a token copy and paste the token from the url or find it using the terminal by typing:
    
-   			`jupyter notebook list`
+   			jupyter notebook list
 		
   	This will give a list of running jupyter notebooks that should look like this:
    		
