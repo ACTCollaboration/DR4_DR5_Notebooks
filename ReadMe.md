@@ -8,7 +8,7 @@ For questions or comments pertaining to these notebooks please reach out to our 
 
 ## Installing and Running the Notebooks
 
-There are two options for building and running this repo: a completely local installation, along with a local download of required data, or a fully-containerized installation via Docker, which installs all dependencies. In the latter case, users will manually download required data during the container set up. We provide instructions for either case. We assume you are running >= Python 3.6 as your default `python` version in your environment.
+There are two options for building and running this repo: a completely local installation, along with a local download of required data, or a fully-containerized installation via Docker, which installs all dependencies. In the latter case, users will manually download required data during the container setup. We provide instructions for either case. We assume you are running >= Python 3.6 as your default `python` version in your environment.
 
 ---
 
@@ -16,7 +16,7 @@ There are two options for building and running this repo: a completely local ins
 ### Download the neccesary data products 
 The links to all of the products used in these notebooks have been compiled in pull_data bash scipts which makes it simple to download the data products using wget or curl. Feel free to add any other data products you'd like to pull by adding it to the relevant pull_data file following the pre-existing format.
 
-In addition to providing pull_data scripts for the entire notebook set, we've also provided scripts that pull products for a subset of notebooks as a space-saving measure. If you only want to run a few of the notebooks, and would like to only pull data corresponding to those notebooks, simply replace the filename in the next two commands with the filename corresponding to the desired notebook(s). The full dataset is around 7.3GB in size: if your internet downloads data at 5-10MBps, it will take you ~25 - 45 min to download everything (the slightly slower time is due to a limit on the download speed from LAMBDA).
+In addition to providing pull_data scripts for the entire notebook set, we've also provided scripts that pull products for a subset of notebooks as a space-saving measure. If you only want to run a few of the notebooks, and would like to only pull data corresponding to those notebooks, simply replace the filename in the next two commands with the filename corresponding to the desired notebook(s). The full dataset is around 7.3GB in size: it should take you ~30 - 45 min to download everything (LAMBDA can be slow, but the other servers should permit a faster download speed).
 
 First set up a directory to hold the data products you will download. Then, execute either of the following commands in that directory:
 
