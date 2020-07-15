@@ -30,7 +30,7 @@ The above will pull all of the data products with the exception of the full-reso
 
 	"act_planck_dr4.01_s08s16_AA_f150_night_map.fits"
 
-Make sure you change the variable `path` in [Section 1](Section_1_Introduction.ipynb) to reflect the directory holding your local data!
+Make sure you change the variable `path` in [Section 1](Notebooks/Section_1_Introduction.ipynb) to reflect the directory holding your local data!
 
 ### Installing packages
 We highly recommend working entirely within a conda environment to manage packages. If that is not possible for you, you should still be able to install all dependencies.
