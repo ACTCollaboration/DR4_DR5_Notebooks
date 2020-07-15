@@ -2,14 +2,18 @@
 
 # ~~~~~~~ Ancillary Products ~~~~~~~~~~
 
-wget https://phy-act1.princeton.edu/public/zatkins/BIN_ACTPOL_50_4_SC_low_ell
-wget -r -np -R "index.html*" https://phy-act1.princeton.edu/public/zatkins/mcm
-wget https://phy-act1.princeton.edu/public/zatkins/TT_cross_spectra.txt
-wget https://phy-act1.princeton.edu/public/zatkins/camb_theory.dat
-wget https://phy-act1.princeton.edu/public/zatkins/cross_cov_TTT.txt
-wget https://phy-act1.princeton.edu/public/zatkins/auto_cov_TTTT.txt
-wget https://phy-act1.princeton.edu/public/zatkins/deep56_TT_spectrum.txt
-wget https://phy-act1.princeton.edu/public/zatkins/deep56_kfilter_tfunc_sim.txt
+wget -O BIN_ACTPOL_50_4_SC_low_ell https://phy-act1.princeton.edu/public/zatkins/BIN_ACTPOL_50_4_SC_low_ell
+mkdir mcm
+wget -O mcm.json https://phy-act1.princeton.edu/public/zatkins/mcm/mcm.json
+wget -O w00.bin https://phy-act1.princeton.edu/public/zatkins/mcm/w00.bin
+mv ./mcm.json ./mcm/mcm.json
+mv ./w00.bin ./mcm/w00.bin
+wget -O TT_cross_spectra.txt https://phy-act1.princeton.edu/public/zatkins/TT_cross_spectra.txt
+wget -O camb_theory.dat https://phy-act1.princeton.edu/public/zatkins/camb_theory.dat
+wget -O cross_cov_TTT.txt https://phy-act1.princeton.edu/public/zatkins/cross_cov_TTT.txt
+wget -O auto_cov_TTTT.txt https://phy-act1.princeton.edu/public/zatkins/auto_cov_TTTT.txt
+wget -O deep56_TT_spectrum.txt https://phy-act1.princeton.edu/public/zatkins/deep56_TT_spectrum.txt
+wget -O deep56_kfilter_tfunc_sim.txt https://phy-act1.princeton.edu/public/zatkins/deep56_kfilter_tfunc_sim.txt
 
 
 echo "getting window function"
