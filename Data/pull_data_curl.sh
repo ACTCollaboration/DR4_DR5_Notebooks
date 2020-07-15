@@ -97,7 +97,7 @@ curl -O https://phy-act1.princeton.edu/public/zatkins/BIN_ACTPOL_50_4_SC_low_ell
 curl -O https://phy-act1.princeton.edu/public/zatkins/ACTPol_lcdm.paramnames.csv
 curl -O https://phy-act1.princeton.edu/public/zatkins/section_9_covsqrt.fits
 curl -O https://phy-act1.princeton.edu/public/zatkins/auto_cov_TTTT.txt
-curl -O https://phy-act1.princeton.edu/public/zatkins/cross_cov_TTT.txt
+curl -O https://phy-act1.princeton.edu/public/zatkins/cross_cov_TTTT.txt
 curl -O https://phy-act1.princeton.edu/public/zatkins/TT_cross_spectra.txt
 curl -O https://phy-act1.princeton.edu/public/zatkins/deep56_TT_spectrum.txt
 curl -O https://phy-act1.princeton.edu/public/zatkins/deep56_kfilter_tfunc_sim.txt

@@ -97,7 +97,7 @@ wget -O BIN_ACTPOL_50_4_SC_low_ell https://phy-act1.princeton.edu/public/zatkins
 wget -O ACTPol_lcdm.paramnames.csv https://phy-act1.princeton.edu/public/zatkins/ACTPol_lcdm.paramnames.csv
 wget -O section_9_covsqrt.fits https://phy-act1.princeton.edu/public/zatkins/section_9_covsqrt.fits
 wget -O auto_cov_TTTT.txt https://phy-act1.princeton.edu/public/zatkins/auto_cov_TTTT.txt
-wget -O cross_cov_TTT.txt https://phy-act1.princeton.edu/public/zatkins/cross_cov_TTT.txt
+wget -O cross_cov_TTTT.txt https://phy-act1.princeton.edu/public/zatkins/cross_cov_TTTT.txt
 wget -O TT_cross_spectra.txt https://phy-act1.princeton.edu/public/zatkins/TT_cross_spectra.txt
 wget -O deep56_TT_spectrum.txt https://phy-act1.princeton.edu/public/zatkins/deep56_TT_spectrum.txt
 

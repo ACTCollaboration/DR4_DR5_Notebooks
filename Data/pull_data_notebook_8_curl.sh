@@ -11,7 +11,7 @@ mv ./w00.bin ./mcm/w00.bin
 curl -O https://phy-act1.princeton.edu/public/zatkins/TT_cross_spectra.txt
 curl -O https://phy-act1.princeton.edu/public/zatkins/camb_theory.dat
 curl -O https://phy-act1.princeton.edu/public/zatkins/auto_cov_TTTT.txt
-curl -O https://phy-act1.princeton.edu/public/zatkins/cross_cov_TTT.txt
+curl -O https://phy-act1.princeton.edu/public/zatkins/cross_cov_TTTT.txt
 curl -O https://phy-act1.princeton.edu/public/zatkins/deep56_TT_spectrum.txt
 curl -O https://phy-act1.princeton.edu/public/zatkins/deep56_kfilter_tfunc_sim.txt
 
