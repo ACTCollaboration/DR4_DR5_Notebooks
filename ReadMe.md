@@ -18,7 +18,7 @@ The links to all of the products used in these notebooks have been compiled in p
 
 In addition to providing pull_data scripts for the entire notebook set, we've also provided scripts that pull products for a subset of notebooks as a space-saving measure. If you only want to run a few of the notebooks, and would like to only pull data corresponding to those notebooks, simply replace the filename in the next two commands with the filename corresponding to the desired notebook(s). The full dataset is around 7.3GB in size: it should take you ~30 - 45 min to download everything (LAMBDA can be slow, but the other servers should permit a faster download speed).
 
-First set up a directory to hold the data products you will download. Then, copy the pull_bash script you wish to run into that directory. Finally, execute either of the following commands in that directory (e.g. to download all the data products):
+First set up a directory to hold the data products you will download. Then, copy the pull_data script you wish to run into that directory. Finally, execute either of the following commands in that directory (e.g. to download all the data products):
 
 	sh pull_data_wget.sh
 	
