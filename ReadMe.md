@@ -8,7 +8,7 @@ For questions or comments pertaining to these notebooks please reach out to our 
 
 ## Installing and Running the Notebooks
 
-There are two options for building and running this repo: a completely local installation, along with a local download of required data, or a fully-containerized installation via Docker, which installs all dependencies. In the latter case, users must still manually download required data. We provide instructions for either case. We assume you are running >= Python 3.6 as your default `python` version in your environment.
+There are two options for building and running this repo: a completely local installation, along with a local download of required data, or a fully-containerized installation via Docker, which installs all dependencies. In the latter case, users will manually download required data during the container set up. We provide instructions for either case. We assume you are running >= Python 3.6 as your default `python` version in your environment.
 
 ---
 
