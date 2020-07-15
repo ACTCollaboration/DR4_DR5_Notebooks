@@ -33,6 +33,8 @@ WORKDIR /usr/home/workspace
 # Install python packages
 RUN pip3 install astropy astropy-helpers cython healpy ipython jupyter numpy pip mpi4py numba toml image getdist camb
 
+RUN pip3 install pandas
+
 RUN pip3 install pymaster
 
 # Install Pixell using the gcc compiler 
