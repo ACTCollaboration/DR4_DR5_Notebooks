@@ -79,25 +79,37 @@ For questions or comments pertaining to these notebooks please reach out to our 
 
    - In the terminal you should now see a link that you can copy and paste into a browser.  The link will open up jupyter notebook and you'll be able to navigate to the notebooks and run them in the container.
    
-   - If that deosn't work open your browser and navigate to 
-   	localhost:8888/
-   - When prompted for a token copy and paste the token from the url or find it using the terminal by typing:
-   
-   			jupyter notebook list
-		
-  	This will give a list of running jupyter notebooks that should look like this:
-   		
-	Currently running servers:
-		
-	http://localhost:8888/?token=0d66c7b877535a9511ebe70d230f5ed65df1e9a0ac4f1144 :: /Users/.... Folder Path
-	
-	Copy the text after 'token=' and before the ' :: /Users...' into the token request box and that should launch the notebook.
-	
 7) Run Tutorials:
 
    - To check your data has correctly linked open the data directory, you should see a list of the relevant files.
    
    - Navigate to the Tutorials folder and start with the 1st notebook which serves as an indtroduction and provides an overview of the tutorials.
+   
+### Trouble Shooting the Docker Jupyter notebooks
+This step can occasionally cause problems if you are already using the port `8888` on your computer (i.e. you have another notebook running somewhere or something similar). Here are some trouble shooting steps you can try.
+
+   - Try explicitly navigating to the `8888` port by opening your browser and entering:
+   	localhost:8888/
+     - When prompted for a token copy and paste the token from the url or find it using the terminal by typing:
+   
+   			jupyter notebook list
+		
+     - This will give a list of running jupyter notebooks that should look like this:
+   		
+		Currently running servers:
+		
+		http://localhost:8888/?token=0d66c7b877535a9511ebe70d230f5ed65df1e9a0ac4f1144 :: /Users/.... Folder Path
+	
+     - Copy the text after 'token=' and before the ' :: /Users...' into the token request box and that should launch the notebook.
+   
+   - You can map the notebook onto a different port
+   
+     - Close your container by typing `exit` then run:
+   
+   			docker run -it -p 8889:8888 -v [local_path]:/usr/home/workspace --name dr4_tutorials --rm actcollaboration/dr4_tutorials
+   	
+        
+      - Now re run jupyter notebook as before and copy the link but change the numbers in the url `8888` -> `8889` 
    
 
    
