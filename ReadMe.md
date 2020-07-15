@@ -42,6 +42,7 @@ Most of the packages required to run the notebooks have well documented installa
 	- Run the following two lines:
 		
 		pip install pixell --user
+		
 		test-pixell
 		
 	You may need to restart your environment for `test-pixell` to work.
@@ -52,7 +53,9 @@ Most of the packages required to run the notebooks have well documented installa
 	- Run the following three lines:
 	
 		git clone https://github.com/ACTCollaboration/pyactlike
+		
 		cd pyactlike
+		
 		pip install . --user
 	
 	- You can test the install with `pytest` in the base directory of the cloned `pyactlike` repo
@@ -68,8 +71,11 @@ Most of the packages required to run the notebooks have well documented installa
 	- Install `nawrapper`:
 	
 		git clone git@github.com:xzackli/nawrapper.git
+		
 		cd nawrapper
+		
 		pip install -e . --user
+	
 
 --------------
 ## Installing with Docker
