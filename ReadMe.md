@@ -81,12 +81,12 @@ Most of the packages required to run the notebooks have well documented installa
 --------------
 ## Docker Installation
 
-We now walk through the Docker installation procedure.  The initial set up should be reasonably fast with the exception of the step that downloads the data.  Once you have set the container up once it's easy to relaunch it with a single command at any time.
+We now walk through the Docker installation procedure.  The initial set up should be reasonably fast with the exception of the step that downloads the data.  AFter setting up the container up once, it's easy to relaunch it with a single command at any time.
 
 1) Install and run [docker](https://www.docker.com/):
 
    - Create a Docker account and then sign in
-   - Docker is set up to limit the memory available to your container.  To adjust this go into Preferences -> Resources and set Memory to 10GB and CPUs to 4.  You can increase them at any point if you need to.
+   - Docker is set up to limit the memory available to your container. **Some notebooks are CPU and memory intensive, so you should adjust this! Go into Preferences -> Resources and set Memory to 10GB and CPUs to 4**.  You can increase them at any point if you need to.
 
 2) Pull the Docker image:
 
