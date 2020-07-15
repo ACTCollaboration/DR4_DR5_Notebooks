@@ -11,9 +11,9 @@ echo "get lensing maps"
 curl -O https://phy-act1.princeton.edu/public/zatkins/act_planck_dr4.01_s14s15_D56_lensing_kappa_baseline.fits
 
 echo "get component separated maps"
-curl -O https://phy-act1.princeton.edu/public/zatkins/tilec_single_tile_d56_comptony_map_v1.2.0_joint.fits 
-curl -O https://phy-act1.princeton.edu/public/zatkins/tilec_single_tile_d56_cmb_map_v1.2.0_joint.fits
-curl -O https://phy-act1.princeton.edu/public/zatkins/tilec_single_tile_d56_cmb_deprojects_comptony_map_v1.2.0_joint.fits 
+curl -O https://phy-act1.princeton.edu/public/zatkins/tilec_single_tile_D56_comptony_map_v1.2.0_joint.fits 
+curl -O https://phy-act1.princeton.edu/public/zatkins/tilec_single_tile_D56_cmb_map_v1.2.0_joint.fits
+curl -O https://phy-act1.princeton.edu/public/zatkins/tilec_single_tile_D56_cmb_deprojects_comptony_map_v1.2.0_joint.fits 
 
 # ~~~~~~~ Cosmo Results ~~~~~~~~~~
 curl -O https://phy-act1.princeton.edu/public/zatkins/ACTPol_lcdm_1.txt
@@ -91,7 +91,7 @@ curl -O https://phy-act1.princeton.edu/public/zatkins/act_planck_dr4.01_s08s16_A
 
 curl -O https://phy-act1.princeton.edu/public/zatkins/messier_objs.csv
 curl -O https://phy-act1.princeton.edu/public/zatkins/camb_theory.dat
-
+curl -O https://phy-act1.princeton.edu/public/zatkins/act_dr4.01_s13_D6_pa1_coadd_est_True_covsqrt.fits
 
 curl -O https://phy-act1.princeton.edu/public/zatkins/BIN_ACTPOL_50_4_SC_low_ell
 curl -O https://phy-act1.princeton.edu/public/zatkins/ACTPol_lcdm.paramnames.csv

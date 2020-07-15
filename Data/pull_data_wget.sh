@@ -7,9 +7,9 @@ wget -O act_planck_dr4.01_s14s15_D56_lensing_kappa_baseline.fits https://phy-act
 
 echo "get component separated maps"
 
-wget -O tilec_single_tile_d56_comptony_map_v1.2.0_joint.fits https://phy-act1.princeton.edu/public/zatkins/tilec_single_tile_d56_comptony_map_v1.2.0_joint.fits
-wget -O tilec_single_tile_d56_cmb_map_v1.2.0_joint.fits https://phy-act1.princeton.edu/public/zatkins/tilec_single_tile_d56_cmb_map_v1.2.0_joint.fits
-wget -O tilec_single_tile_d56_cmb_deprojects_comptony_map_v1.2.0_joint.fits https://phy-act1.princeton.edu/public/zatkins/tilec_single_tile_d56_cmb_deprojects_comptony_map_v1.2.0_joint.fits
+wget -O tilec_single_tile_D56_comptony_map_v1.2.0_joint.fits https://phy-act1.princeton.edu/public/zatkins/tilec_single_tile_D56_comptony_map_v1.2.0_joint.fits
+wget -O tilec_single_tile_D56_cmb_map_v1.2.0_joint.fits https://phy-act1.princeton.edu/public/zatkins/tilec_single_tile_D56_cmb_map_v1.2.0_joint.fits
+wget -O tilec_single_tile_D56_cmb_deprojects_comptony_map_v1.2.0_joint.fits https://phy-act1.princeton.edu/public/zatkins/tilec_single_tile_D56_cmb_deprojects_comptony_map_v1.2.0_joint.fits
 
 
 # ~~~~~~~~~ Cosmo Results ~~~~~~~~~~
@@ -100,7 +100,7 @@ wget -O auto_cov_TTTT.txt https://phy-act1.princeton.edu/public/zatkins/auto_cov
 wget -O cross_cov_TTTT.txt https://phy-act1.princeton.edu/public/zatkins/cross_cov_TTTT.txt
 wget -O TT_cross_spectra.txt https://phy-act1.princeton.edu/public/zatkins/TT_cross_spectra.txt
 wget -O deep56_TT_spectrum.txt https://phy-act1.princeton.edu/public/zatkins/deep56_TT_spectrum.txt
-
+wget -O act_dr4.01_s13_D6_pa1_coadd_est_True_covsqrt.fits https://phy-act1.princeton.edu/public/zatkins/act_dr4.01_s13_D6_pa1_coadd_est_True_covsqrt.fits
 wget -O deep56_kfilter_tfunc_sim.txt https://phy-act1.princeton.edu/public/zatkins/deep56_kfilter_tfunc_sim.txt
 mkdir mcm
 wget -O mcm.json https://phy-act1.princeton.edu/public/zatkins/mcm/mcm.json

@@ -4,9 +4,9 @@
 
 
 wget -O act_planck_dr4.01_s14s15_D56_lensing_kappa_baseline.fits https://phy-act1.princeton.edu/public/zatkins/act_planck_dr4.01_s14s15_D56_lensing_kappa_baseline.fits
-wget -O tilec_single_tile_d56_comptony_map_v1.2.0_joint.fits https://phy-act1.princeton.edu/public/zatkins/tilec_single_tile_d56_comptony_map_v1.2.0_joint.fits
-wget -O tilec_single_tile_d56_cmb_map_v1.2.0_joint.fits https://phy-act1.princeton.edu/public/zatkins/tilec_single_tile_d56_cmb_map_v1.2.0_joint.fits
-wget -O tilec_single_tile_d56_cmb_deprojects_comptony_map_v1.2.0_joint.fits https://phy-act1.princeton.edu/public/zatkins/tilec_single_tile_d56_cmb_deprojects_comptony_map_v1.2.0_joint.fits
+wget -O tilec_single_tile_D56_comptony_map_v1.2.0_joint.fits https://phy-act1.princeton.edu/public/zatkins/tilec_single_tile_D56_comptony_map_v1.2.0_joint.fits
+wget -O tilec_single_tile_D56_cmb_map_v1.2.0_joint.fits https://phy-act1.princeton.edu/public/zatkins/tilec_single_tile_D56_cmb_map_v1.2.0_joint.fits
+wget -O tilec_single_tile_D56_cmb_deprojects_comptony_map_v1.2.0_joint.fits https://phy-act1.princeton.edu/public/zatkins/tilec_single_tile_D56_cmb_deprojects_comptony_map_v1.2.0_joint.fits
 
 
 # ~~~~~~~ ACT Cluster catalog ~~~~~~
