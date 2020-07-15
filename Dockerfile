@@ -49,9 +49,11 @@ RUN python3 setup.py build_ext -i
 RUN python3 setup.py install 
 
 # Install pyactlike which is used for the likelihood
-# RUN git clone https://github.com/ACTCollaboration/pyactlike.git
-# WORKDIR /usr/home/workspace/pyactlike
-# RUN pip3 install 
+WORKDIR /usr/home/workspace
+RUN  wget https://lambda.gsfc.nasa.gov/data/suborbital/ACT/ACT_dr4/likelihoods/actpollite_python_dr4.01.tar.gz -O - | tar -xz
+WORKDIR /usr/home/workspace/actpollite_python_dr4.01
+RUN python3 setup.py build_ext -i
+RUN python3 setup.py install
 
 # Return to the workspace directory, make actdr4 the owner of the directory and switch from root to actdr4 user
 WORKDIR /usr/home/workspace
@@ -64,4 +66,3 @@ ADD /Data data
 
 # Expose a port to run the notebook on later
 EXPOSE 8888
-

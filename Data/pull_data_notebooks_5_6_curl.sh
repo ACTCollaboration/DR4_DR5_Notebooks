@@ -4,10 +4,10 @@
 
 echo "get derived maps"
 
-curl -O -k https://phy-act1.princeton.edu/staged/zatkins/act_planck_dr4.01_s14s15_D56_lensing_kappa_baseline.fits
-curl -O -k https://phy-act1.princeton.edu/staged/zatkins/tilec_single_tile_d56_comptony_map_v1.2.0_joint.fits
-curl -O -k https://phy-act1.princeton.edu/staged/zatkins/tilec_single_tile_d56_cmb_map_v1.2.0_joint.fits
-curl -O -k https://phy-act1.princeton.edu/staged/zatkins/tilec_single_tile_d56_cmb_deprojects_comptony_map_v1.2.0_joint.fits
+curl -O https://phy-act1.princeton.edu/staged/zatkins/act_planck_dr4.01_s14s15_D56_lensing_kappa_baseline.fits
+curl -O https://phy-act1.princeton.edu/staged/zatkins/tilec_single_tile_d56_comptony_map_v1.2.0_joint.fits
+curl -O https://phy-act1.princeton.edu/staged/zatkins/tilec_single_tile_d56_cmb_map_v1.2.0_joint.fits
+curl -O https://phy-act1.princeton.edu/staged/zatkins/tilec_single_tile_d56_cmb_deprojects_comptony_map_v1.2.0_joint.fits
 
 # ~~~~~~~ ACT Cluster catalog ~~~~~~
 echo "Get a cluster catalog"
