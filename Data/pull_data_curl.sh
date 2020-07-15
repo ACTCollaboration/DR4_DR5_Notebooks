@@ -4,20 +4,20 @@
 # ~~~~~~~ Derived Maps ~~~~~~~~~~~
 # Temporarily get them from phy-act1
 echo "get the coadd maps"
-curl -O https://phy-act1.princeton.edu/staged/zatkins/act_planck_dr4.01_s08s16_AA_f150_night_map_d56_I.fits
-curl -O https://phy-act1.princeton.edu/staged/zatkins/act_planck_dr4.01_s08s16_AA_f150_night_map_dg_I.fits
+curl -O https://phy-act1.princeton.edu/public/zatkins/act_planck_dr4.01_s08s16_AA_f150_night_map_d56_I.fits
+curl -O https://phy-act1.princeton.edu/public/zatkins/act_planck_dr4.01_s08s16_AA_f150_night_map_dg_I.fits
 
 echo "get lensing maps"
-curl -O https://phy-act1.princeton.edu/staged/zatkins/act_planck_dr4.01_s14s15_D56_lensing_kappa_baseline.fits
+curl -O https://phy-act1.princeton.edu/public/zatkins/act_planck_dr4.01_s14s15_D56_lensing_kappa_baseline.fits
 
 echo "get component separated maps"
-curl -O https://phy-act1.princeton.edu/staged/zatkins/tilec_single_tile_d56_comptony_map_v1.2.0_joint.fits 
-curl -O https://phy-act1.princeton.edu/staged/zatkins/tilec_single_tile_d56_cmb_map_v1.2.0_joint.fits
-curl -O https://phy-act1.princeton.edu/staged/zatkins/tilec_single_tile_d56_cmb_deprojects_comptony_map_v1.2.0_joint.fits 
+curl -O https://phy-act1.princeton.edu/public/zatkins/tilec_single_tile_d56_comptony_map_v1.2.0_joint.fits 
+curl -O https://phy-act1.princeton.edu/public/zatkins/tilec_single_tile_d56_cmb_map_v1.2.0_joint.fits
+curl -O https://phy-act1.princeton.edu/public/zatkins/tilec_single_tile_d56_cmb_deprojects_comptony_map_v1.2.0_joint.fits 
 
 # ~~~~~~~ Cosmo Results ~~~~~~~~~~
-curl -O https://phy-act1.princeton.edu/staged/zatkins/ACTPol_lcdm_1.txt
-curl -O https://phy-act1.princeton.edu/staged/zatkins/ACTPol_lcdm.paramnames
+curl -O https://phy-act1.princeton.edu/public/zatkins/ACTPol_lcdm_1.txt
+curl -O https://phy-act1.princeton.edu/public/zatkins/ACTPol_lcdm.paramnames
 
 # ~~~~ Ancillary Data Products ~~~~~~
 echo "getting masks"
@@ -81,30 +81,30 @@ echo "Get a cluster catalog"
 curl -O https://lambda.gsfc.nasa.gov/data/suborbital/ACT/actpol_2016_lensing/E-D56Clusters.fits
 
 # ~~~~~~~~ Sims ~~~~~~~~~~~~~~~~~~
-curl -O https://phy-act1.princeton.edu/staged/zatkins/act_dr4.01_s15_D56_pa1_coadd_est_True_covsqrt.fits
+curl -O https://phy-act1.princeton.edu/public/zatkins/act_dr4.01_s15_D56_pa1_coadd_est_True_covsqrt.fits
 
 # ~~~~~~ Notebook Ancillary Products ~~~~~~~~~~~~~
 
 echo "get the coadd maps"
-curl -O https://phy-act1.princeton.edu/staged/zatkins/act_planck_dr4.01_s08s16_AA_f150_night_map_d56_I.fits
-curl -O https://phy-act1.princeton.edu/staged/zatkins/act_planck_dr4.01_s08s16_AA_f150_night_map_dg_I.fits
+curl -O https://phy-act1.princeton.edu/public/zatkins/act_planck_dr4.01_s08s16_AA_f150_night_map_d56_I.fits
+curl -O https://phy-act1.princeton.edu/public/zatkins/act_planck_dr4.01_s08s16_AA_f150_night_map_dg_I.fits
 
-curl -O https://phy-act1.princeton.edu/staged/zatkins/messier_objs.csv
-curl -O https://phy-act1.princeton.edu/staged/zatkins/camb_theory.dat
+curl -O https://phy-act1.princeton.edu/public/zatkins/messier_objs.csv
+curl -O https://phy-act1.princeton.edu/public/zatkins/camb_theory.dat
 
 
-curl -O https://phy-act1.princeton.edu/staged/zatkins/BIN_ACTPOL_50_4_SC_low_ell
-curl -O https://phy-act1.princeton.edu/staged/zatkins/ACTPol_lcdm.paramnames.csv
-curl -O https://phy-act1.princeton.edu/staged/zatkins/section_9_covsqrt.fits
-curl -O https://phy-act1.princeton.edu/staged/zatkins/auto_cov_TTTT.txt
-curl -O https://phy-act1.princeton.edu/staged/zatkins/cross_cov_TTT.txt
-curl -O https://phy-act1.princeton.edu/staged/zatkins/TT_cross_spectra.txt
-curl -O https://phy-act1.princeton.edu/staged/zatkins/deep56_TT_spectrum.txt
-curl -O https://phy-act1.princeton.edu/staged/zatkins/deep56_kfilter_tfunc_sim.txt
+curl -O https://phy-act1.princeton.edu/public/zatkins/BIN_ACTPOL_50_4_SC_low_ell
+curl -O https://phy-act1.princeton.edu/public/zatkins/ACTPol_lcdm.paramnames.csv
+curl -O https://phy-act1.princeton.edu/public/zatkins/section_9_covsqrt.fits
+curl -O https://phy-act1.princeton.edu/public/zatkins/auto_cov_TTTT.txt
+curl -O https://phy-act1.princeton.edu/public/zatkins/cross_cov_TTT.txt
+curl -O https://phy-act1.princeton.edu/public/zatkins/TT_cross_spectra.txt
+curl -O https://phy-act1.princeton.edu/public/zatkins/deep56_TT_spectrum.txt
+curl -O https://phy-act1.princeton.edu/public/zatkins/deep56_kfilter_tfunc_sim.txt
 
 mkdir mcm
-curl -O  https://phy-act1.princeton.edu/staged/zatkins/mcm/mcm.json
-curl -O  https://phy-act1.princeton.edu/staged/zatkins/mcm/w00.bin
+curl -O  https://phy-act1.princeton.edu/public/zatkins/mcm/mcm.json
+curl -O  https://phy-act1.princeton.edu/public/zatkins/mcm/w00.bin
 
 mv ./mcm.json ./mcm/mcm.json
 mv ./w00.bin ./mcm/w00.bin

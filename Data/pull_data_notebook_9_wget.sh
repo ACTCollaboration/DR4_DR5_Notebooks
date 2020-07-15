@@ -17,7 +17,7 @@ tar -xf act_dr4.01_masks.tar.gz masks/footprints/act_dr4.01_D6_apo_w0.fits
 mv masks/footprints/act_dr4.01_D6_apo_w0.fits ./act_dr4.01_D6_apo_w0.fits
 
 rm act_dr4.01_masks.tar.gz
-rm -r maskss
+rm -r masks
 
 # ~~~~~~~~~ Sims ~~~~~~~
-wget https://phy-act1.princeton.edu/staged/zatkins/act_dr4.01_s15_D56_pa1_coadd_est_True_covsqrt.fits
+wget https://phy-act1.princeton.edu/public/zatkins/act_dr4.01_s15_D56_pa1_coadd_est_True_covsqrt.fits
