@@ -65,4 +65,4 @@ ADD /Notebooks Notebooks
 ADD /Data data
 
 # Expose a port to run the notebook on later
-EXPOSE 8080
+EXPOSE 8888
