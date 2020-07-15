@@ -80,6 +80,8 @@ Most of the packages required to run the notebooks have well documented installa
 --------------
 ## Docker Installation
 
+We now walk through the Docker installation procedure.  The initial set up should be reasonably fast with the exception of the step that downloads the data.  Once you have set the container up once it's easy to relaunch it with a single command at any time.
+
 1) Install and run [docker](https://www.docker.com/):
 
    - Create a Docker account and then sign in
@@ -110,13 +112,16 @@ Most of the packages required to run the notebooks have well documented installa
    Just replace the `[pull_data_curl]` part with the name of the file you wish to run. This procedure is the same as the local installation/download instructions. 
 5) Relaunch the container with the new data:
 
-	- Now that we have the data we just need to relaunch our container and we're ready to go.  To do so run:
+	- Now that we have the data we just need to relaunch our container and we're ready to go.  To do so we first stop the container (the part of this command before the `&&` can be used to stop the container whenever you wish to do so in the future) and then relaunch it :
 
 			docker container stop dr4_tutorials && docker run -it -p 8888:8888 -v [local_path]:/usr/home/workspace --name dr4_tutorials --rm actcollaboration/dr4_tutorials
 
-	- Again you need to replace `[local_path]` with the path to the folder you created earlier.  If you're on a windows machine you may need to switch the slashes in the path name to `/` (forward slashes) instead of back slashes. If the command fails on the path name the first time then just run the second half of it with the corrected path name:
+	- Again you need to replace `[local_path]` with the path to the folder you created earlier.  Here the `-v` flag mounts your local folder onto the container so that you can easily access the data and save any changes you make to the notebooks.  
+	- If you're on a windows machine you may need to switch the slashes in the path name to `/` (forward slashes) instead of back slashes. If the command fails on the path name the first time then just run the second half of it with the corrected path name:
 		
 			docker run -it -p 8888:8888 -v [local_path]:/usr/home/workspace --name dr4_tutorials --rm actcollaboration/dr4_tutorials
+
+	- For future use of this container you can relaunch it using just the above command and you can stop it using `docker container stop dr4_tutorials`
 
 6) Launch Jupyter Notebook:
 
