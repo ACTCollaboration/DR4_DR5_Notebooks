@@ -80,7 +80,7 @@ echo "Get a cluster catalog"
 wget https://lambda.gsfc.nasa.gov/data/suborbital/ACT/actpol_2016_lensing/E-D56Clusters.fits
 
 # ~~~~~~~~ Sims ~~~~~~~~~~~~~~~~~~
-wget -O act_dr4.01_s15_D56_pa1_coadd_est_True_covsqrt.fits https://phy-act1.princeton.edu/public/zatkins/act_dr4.01_s15_D56_pa1_coadd_est_True_covsqrt.fits
+# wget -O act_dr4.01_s15_D56_pa1_coadd_est_True_covsqrt.fits https://phy-act1.princeton.edu/public/zatkins/act_dr4.01_s15_D56_pa1_coadd_est_True_covsqrt.fits
 
 # ~~~~~~ Notebook Ancillary Products ~~~~~~~~~~~~~
 

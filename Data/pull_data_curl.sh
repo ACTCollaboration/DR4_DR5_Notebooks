@@ -81,7 +81,7 @@ echo "Get a cluster catalog"
 curl -O https://lambda.gsfc.nasa.gov/data/suborbital/ACT/actpol_2016_lensing/E-D56Clusters.fits
 
 # ~~~~~~~~ Sims ~~~~~~~~~~~~~~~~~~
-curl -O https://phy-act1.princeton.edu/public/zatkins/act_dr4.01_s15_D56_pa1_coadd_est_True_covsqrt.fits
+# curl -O https://phy-act1.princeton.edu/public/zatkins/act_dr4.01_s15_D56_pa1_coadd_est_True_covsqrt.fits
 
 # ~~~~~~ Notebook Ancillary Products ~~~~~~~~~~~~~
 
