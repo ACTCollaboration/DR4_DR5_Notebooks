@@ -1,11 +1,14 @@
 ## This repository allows users to run and access the map-manipulation library Pixell and run the Jupyter notebook tutorials associated with Data Release 4.
 
-ACT's Data Release 4 includes intensity and polarization maps covering close to half the sky as well as a variety of other data products.  These data products are described in some detail in the Python Notebook Tutorials presented here.  The tutorials also introduce users to the Plate Carree maps used for the ACT data products as well as the python library, Pixell, used to handle the maps.  
+ACT's Data Release 4 includes intensity and polarization maps covering close to half the sky as well as a variety of other data products.  These data products are described in some detail in the Python Notebook Tutorials presented here.  The tutorials also introduce users to the Plate Carree maps used for the ACT data products as well as the python library, Pixell, used to handle the maps.
 
+The full list of ACT DR4 data products can be found on LAMBDA [here](https://lambda.gsfc.nasa.gov/product/act/). 
+
+For questions or comments pertaining to these notebooks please reach out to our help desk at act_notebooks@googlegroups.com.
 
 ## Installing and Running the Notebooks
 
-There are two options for running the notebook set: a completely local installation, along with a local download of required data, or a fully-containerized installation via Docker, which installs all dependencies. In the latter case, users must still download required data. We provide instructions for either case. 
+There are two options for building and running this repo: a completely local installation, along with a local download of required data, or a fully-containerized installation via Docker, which installs all dependencies. In the latter case, users must still manually download required data. We provide instructions for either case. We assume you are running >= Python 3.6 as your default `python` version in your environment.
 
 ---
 
@@ -26,19 +29,16 @@ Or if you are working on a mac and don't have wget set up, you can use homebrew 
 The above will pull all of the data products with the exception of the full-resolution, full-size coadded maps due to the size of these files. Therefore, for the coadded map we automatically provide smaller versions (a full-res, smaller-footprint-cutout, and a low-res, full-size-footprint version); however, you can also get the full map from the LAMBDA website if you wish to use that.  You would need the file: 
 
 	"act_planck_dr4.01_s08s16_AA_f150_night_map.fits"
-	
-The full list of ACT DR4 data products can be found on LAMBDA [here](https://lambda.gsfc.nasa.gov/product/act/). 
 
-For questions or comments pertaining to these notebooks please reach out to our help desk at act_notebooks@googlegroups.com.
 
 ### Installing packages
-We highly recommend working entirely within a conda environment to manage packages. If that is not possible for you, most notebooks should remain functional, with the exception of [Section 8](Section_8_power_spectra_part_2.ipynb), see below.
+We highly recommend working entirely within a conda environment to manage packages. If that is not possible for you, you should still be able to install all dependencies.
 
 Most of the packages required to run the notebooks have well documented installation procedures, available on their websites ([Healpy](https://healpy.readthedocs.io/en/latest/), [getdist](https://getdist.readthedocs.io/en/latest/), [astropy](https://docs.astropy.org/en/stable/), [CAMB](https://camb.readthedocs.io/en/latest/index.html), [matplotlib](https://matplotlib.org/), [numpy](https://numpy.org/), [pandas](https://pandas.pydata.org/), [scipy](https://www.scipy.org/)). For proprietary packages ([Pixell](https://github.com/simonsobs/pixell/), [pyactlike](https://github.com/Collaboration/pyactlike), [nawrapper](https://github.com/xzackli/nawrapper)), you can navigate to the ReadMe of the repositories and follow their installation documentation; or, we have reproduced it for you here:
 
 1) Pixell
 
-	- Install all dependencies listed [here](https://github.com/simonsobs/pixell/#dependencies)
+	- Install all `Pixell` dependencies [listed here](https://github.com/simonsobs/pixell/#dependencies)
 	- Run the following two lines:
 		
 		pip install pixell --user
@@ -60,6 +60,16 @@ Most of the packages required to run the notebooks have well documented installa
 3) nawrapper
 
 	- The recommended installation procedure involves working in a conda environment. If this is something you are comfortable with, or prefer, follow the clear and detailed steps [outlined here](https://xzackli.github.io/nawrapper/usage/installation.html)
+	- Otherwise, [install namaster](https://github.com/LSSTDESC/NaMaster). The easiest way to do this is to install `pymaster`:
+	
+		pip install pymaster --user
+		
+	- Install `nawrapper` dependencies not already mentioned above: [cython](https://cython.readthedocs.io/en/latest/) and [pillow](https://pillow.readthedocs.io/en/stable/)
+	- Install `nawrapper`:
+	
+		git clone git@github.com:xzackli/nawrapper.git
+		cd nawrapper
+		pip install -e . --user
 
 --------------
 ## Installing with Docker
@@ -79,7 +89,7 @@ Most of the packages required to run the notebooks have well documented installa
 
 3) Move the container content to a local directory:
 
-	- We now want to move the data in the container to somewhere that's easy to find on your local machine.  I suggest creating a folder on your computer somewhere where you want to store the data for this tutorial.  The path to that folder should replace `[local_path]` in the lines below. 	
+	- We now want to move the data in the container to somewhere that's easy to find on your local machine.  We suggest creating a folder on your computer somewhere where you want to store the data for this tutorial.  The path to that folder should replace `[local_path]` in the lines below. 	
 		
 		docker cp dr4_tutorials:/usr/home/workspace/. [local_path] && cd [local_path]/Data
    
@@ -87,10 +97,10 @@ Most of the packages required to run the notebooks have well documented installa
     
 4) Download the data:
 
-	- In order to run the notebooks you'll need to download the relevant data products. In the data folder you'll notice a few different scripts that have been set up to pull the correct products.  If you're on a mac you will want to use the files that have 'curl' in the name, unless you have wget set up already.  You can choose to pull all of the data products or just a subset depending on which file you choose (run `ls` for macs or `dir` for windows to check what files are available).  From there you just need to run that file using:
+	- In order to run the notebooks you'll need to download the relevant data products. In the data folder of this repo you'll notice a few different scripts that have been set up to pull the correct products.  If you're on a mac you will want to use the files that have 'curl' in the name, unless you have wget set up already.  You can choose to pull all of the data products or just a subset depending on which file you choose (run `ls` for macs or `dir` for windows to check what files are available).  From there you just need to run that file using:
    
    		sh [pull_data_curl].sh 
-   Just replace the `[pull_data_curl]` part with the name of the file you wish to run.
+   Just replace the `[pull_data_curl]` part with the name of the file you wish to run. This procedure is the same as the local installation/download instructions. 
 5) Relaunch the container with the new data:
 
 	- Now that we have the data we just need to relaunch our container and we're ready to go.  To do so run:
