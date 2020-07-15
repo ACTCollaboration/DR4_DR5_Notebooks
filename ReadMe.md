@@ -188,21 +188,23 @@ When in the container if you wish to save work or data locally simply save them 
 
 ## References:
 
-* Aiola, S., Calabrese, E., Loic, M., & Naess, S. 2020, ApJS, 1, 1
-* Akrami, Y., Arroja, F., Ashdown, M., et al. 2018, arXiv e-prints,arXiv:1807.06205
+* Aiola, S., Calabrese, E., Loic, M., & Naess, S. 2020, ApJS, 1, 1 [pre-publication](https://phy-act1.princeton.edu/public/saiola/act_dr4_A20.pdf)
+* Akrami, Y., Arroja, F., Ashdown, M., et al. 2018, arXiv e-prints, [arXiv:1807.06205](https://arxiv.org/abs/1807.06205)
 * Astropy Collaboration, Robitaille, T. P., Tollerud, E. J., et al.2013, [A&A, 558, A33](http://dx.doi.org/10.1051/0004-6361/201322068)
 * Bennett, C. L., Kogut, A., Hinshaw, G., et al. 1994, [ApJ, 436, 423](http://dx.doi.org/10.1086/174918)
 * Bennett, C. L., Halpern, M., Hinshaw, G., et al. 2003, [ApJS, 148, 1](http://dx.doi.org/10.1086/377253)
 * Carlstrom, J.E., Holder, G. P., Reese, E. D. 2002 [ARAA, 40, 643](https://doi.org/10.1146/annurev.astro.40.060401.093803)
-* Choi, S., Hasselfield, M., Ho, P., Koopman, B., & Lungu, M.2020, ApJS
+* Choi, S., Hasselfield, M., Ho, P., Koopman, B., & Lungu, M.2020, ApJS [pre-publication](https://phy-act1.princeton.edu/public/saiola/act_dr4_C20.pdf)
 * Darwish, O., Madhavacheril, M. S., Sherwin, B., et al. 2020, [arXiv:2004.01139 [astro-ph.CO]](http://arxiv.org/abs/2004.01139)
 * Górski, K. M., Hivon, E., Banday, A. J., et al. 2005, [ApJ, 622, 759](http://dx.doi.org/10.1086/427976)
 * Hilton et al. 2020, In preparation, 1
 * Hunter, J. D. 2007, [Computing in Science & Engineering, 9, 90](http://dx.doi.org/10.1109/MCSE.2007.55)
 * Lewis, A. 2019, [arXiv:1910.13970 [astro-ph.IM]](http://arxiv.org/abs/1910.13970)
 * Lewis, A., Challinor, A., & Lasenby, A. 2000, [ApJ, 538, 473](http://dx.doi.org/10.1086/309179)
+* Louis et al. 2017, [JCAP, 06, 031](https://doi.org/10.1088/1475-7516/2017/06/031)
 * Madhavacheril, M. S., Hill, J. C., Naess, S., et al. 2019, [arXiv:1911.05717 [astro-ph.CO]](http://arxiv.org/abs/1911.05717)
-* Naess et al. 2020, In preparation, 1
+* Naess et al. 2020, In preparation, 1 [pre-publication](https://phy-act1.princeton.edu/public/saiola/act_dr4_N20.pdf)
+* Naess et al. 2014, [JCAP, 10, 007](https://doi.org/10.1088/1475-7516/2014/10/007)
 * Price-Whelan, A. M., Sip ̋ocz, B. M., Günther, H. M., et al. 2018, [AJ, 156, 123](http://dx.doi.org/10.3847/1538-3881/aabc4f)
 * Reinecke, M., & Seljebotn, D. S. 2013, [A&A, 554, A112](http://dx.doi.org/10.1051/0004-6361/201321494)
 * Zonca, A., Singer, L., Lenz, D., et al. 2019, [Journal of OpenSource Software, 4, 1298](http://dx.doi.org/10.21105/joss.01298)
