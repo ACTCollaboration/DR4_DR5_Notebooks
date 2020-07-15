@@ -19,4 +19,4 @@ rm act_dr4.01_masks.tar.gz
 rm -r masks
 
 # ~~~~~~~~ Sims ~~~~~~~~~~~~~~~~~~
-curl -O -k https://phy-act1.princeton.edu/staged/zatkins/act_dr4.01_s15_D56_pa1_coadd_est_True_covsqrt.fits
+curl -O https://phy-act1.princeton.edu/staged/zatkins/act_dr4.01_s15_D56_pa1_coadd_est_True_covsqrt.fits
