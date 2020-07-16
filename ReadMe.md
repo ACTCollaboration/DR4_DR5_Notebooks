@@ -55,7 +55,7 @@ Most of the packages required to run the notebooks have well documented installa
 	
 		https://lambda.gsfc.nasa.gov/data/suborbital/ACT/ACT_dr4/likelihoods/actpollite_python_dr4.01.tar.gz
 		
-	- Extract the files from the `tar.gz` zipped file. There should be a new folder make in your current directory called `actpollite_python_dr4.01`. 
+	- Extract the files from the `tar.gz` zipped file. There should be a new folder made in your current directory called `actpollite_python_dr4.01`. 
 	- Navigate into `actpollite_python_dr4.01` and run the following:
 		
 		pip install . --user
