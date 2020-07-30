@@ -101,6 +101,11 @@ wget -O TT_cross_spectra.txt https://phy-act1.princeton.edu/public/zatkins/TT_cr
 wget -O deep56_TT_spectrum.txt https://phy-act1.princeton.edu/public/zatkins/deep56_TT_spectrum.txt
 wget -O act_dr4.01_s13_D6_pa1_coadd_est_True_covsqrt.fits https://phy-act1.princeton.edu/public/zatkins/act_dr4.01_s13_D6_pa1_coadd_est_True_covsqrt.fits
 wget -O deep56_kfilter_tfunc_sim.txt https://phy-act1.princeton.edu/public/zatkins/deep56_kfilter_tfunc_sim.txt
+
+wget -O 060420_lensed_best_fits_params.txt https://phy-act1.princeton.edu/public/zatkins/060420_lensed_best_fits_params.txt
+wget -O 060420_delensed_best_fits_params.txt https://phy-act1.princeton.edu/public/zatkins/060420_delensed_best_fits_params.txt
+wget -O 060320_param_shift_20x20.txt https://phy-act1.princeton.edu/public/zatkins/060320_param_shift_20x20.txt
+
 mkdir mcm
 wget -O mcm.json https://phy-act1.princeton.edu/public/zatkins/mcm/mcm.json
 wget -O w00.bin https://phy-act1.princeton.edu/public/zatkins/mcm/w00.bin
