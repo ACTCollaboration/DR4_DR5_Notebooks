@@ -198,7 +198,7 @@ When in the container if you wish to save work or data locally simply save them 
 * Choi, S., Hasselfield, M., Ho, P., Koopman, B., & Lungu, M.2020, ApJS [pre-publication](https://phy-act1.princeton.edu/public/saiola/act_dr4_C20.pdf)
 * Darwish, O., Madhavacheril, M. S., Sherwin, B., et al. 2020, [arXiv:2004.01139 [astro-ph.CO]](http://arxiv.org/abs/2004.01139)
 * Górski, K. M., Hivon, E., Banday, A. J., et al. 2005, [ApJ, 622, 759](http://dx.doi.org/10.1086/427976)
-* Han, D., Sehgal, N., MacInnis, A., et al. 2020, The Atacama Cosmology Telescope:  Delensed Power Spectra and Parameters, [arXiv:2007.14405 [astro-ph.CO]](https://arxiv.org/abs/2007.14405)
+* Han, D., Sehgal, N., MacInnis, A., et al. 2020, [arXiv:2007.14405 [astro-ph.CO]](https://arxiv.org/abs/2007.14405)
 * Hilton et al. 2020, In preparation, 1
 * Hunter, J. D. 2007, [Computing in Science & Engineering, 9, 90](http://dx.doi.org/10.1109/MCSE.2007.55)
 * Lewis, A. 2019, [arXiv:1910.13970 [astro-ph.IM]](http://arxiv.org/abs/1910.13970)
