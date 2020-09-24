@@ -76,8 +76,11 @@ wget https://irsa.ipac.caltech.edu/data/Planck/release_2/all-sky-maps/maps/HFI_S
 wget https://data.sdss.org/sas/dr12/boss/lss/galaxy_DR12v5_CMASSLOWZTOT_South.fits.gz && gunzip ./galaxy_DR12v5_CMASSLOWZTOT_South.fits.gz
 
 # ~~~~~~~ ACT Cluster catalog ~~~~~~
-echo "Get a cluster catalog"
+echo "Get cluster catalogs"
 wget https://lambda.gsfc.nasa.gov/data/suborbital/ACT/actpol_2016_lensing/E-D56Clusters.fits
+
+wget https://astro.ukzn.ac.za/~mjh/ACTDR5/v1.0b3/DR5_cluster-catalog_v1.0b3.fits
+
 
 # ~~~~~~~~ Sims ~~~~~~~~~~~~~~~~~~
 # wget -O act_dr4.01_s15_D56_pa1_coadd_est_True_covsqrt.fits https://phy-act1.princeton.edu/public/zatkins/act_dr4.01_s15_D56_pa1_coadd_est_True_covsqrt.fits

@@ -13,8 +13,10 @@ curl -O https://irsa.ipac.caltech.edu/data/Planck/release_2/all-sky-maps/maps/HF
 curl -O https://phy-act1.princeton.edu/public/zatkins/messier_objs.csv
 
 # ~~~~~~~ ACT Cluster catalog ~~~~~~
-echo "Get a cluster catalog"
+echo "Get cluster catalogs"
 curl -O https://lambda.gsfc.nasa.gov/data/suborbital/ACT/actpol_2016_lensing/E-D56Clusters.fits
+
+curl -O https://astro.ukzn.ac.za/~mjh/ACTDR5/v1.0b3/DR5_cluster-catalog_v1.0b3.fits
 
 
 
