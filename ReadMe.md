@@ -35,7 +35,7 @@ Make sure you change the variable `path` in [Section 1](Notebooks/Section_1_Intr
 ### Installing packages
 We highly recommend working entirely within a conda environment to manage packages. If that is not possible for you, you should still be able to install all dependencies.
 
-Most of the packages required to run the notebooks have well documented installation procedures, available on their websites ([Healpy](https://healpy.readthedocs.io/en/latest/), [getdist](https://getdist.readthedocs.io/en/latest/), [astropy](https://docs.astropy.org/en/stable/), [CAMB](https://camb.readthedocs.io/en/latest/index.html), [matplotlib](https://matplotlib.org/), [numpy](https://numpy.org/), [pandas](https://pandas.pydata.org/), [scipy](https://www.scipy.org/)). For proprietary packages ([Pixell](https://github.com/simonsobs/pixell/), [pyactlike](https://github.com/Collaboration/pyactlike), [nawrapper](https://github.com/xzackli/nawrapper)), you can navigate to the ReadMe of the repositories and follow their installation documentation; or, we have reproduced it for you here:
+Most of the packages required to run the notebooks have well documented installation procedures, available on their websites ([Healpy](https://healpy.readthedocs.io/en/latest/), [getdist](https://getdist.readthedocs.io/en/latest/), [astropy](https://docs.astropy.org/en/stable/), [CAMB](https://camb.readthedocs.io/en/latest/index.html), [matplotlib](https://matplotlib.org/), [numpy](https://numpy.org/), [pandas](https://pandas.pydata.org/), [plotly](https://plotly.com/python/), [scipy](https://www.scipy.org/)). For proprietary packages ([Pixell](https://github.com/simonsobs/pixell/), [pyactlike](https://github.com/Collaboration/pyactlike), [nawrapper](https://github.com/xzackli/nawrapper)), you can navigate to the ReadMe of the repositories and follow their installation documentation; or, we have reproduced it for you here:
 
 1) Pixell
 
@@ -184,6 +184,7 @@ When in the container if you wish to save work or data locally simply save them 
 - [matplotlib](https://matplotlib.org/)
 - [numpy](https://numpy.org/)
 - [pandas](https://pandas.pydata.org/)
+- [plotly](https://plotly.com/python/)
 - [scipy](https://www.scipy.org/)
 
 
@@ -199,7 +200,7 @@ When in the container if you wish to save work or data locally simply save them 
 * Darwish, O., Madhavacheril, M. S., Sherwin, B., et al. 2020, [arXiv:2004.01139 [astro-ph.CO]](http://arxiv.org/abs/2004.01139)
 * Górski, K. M., Hivon, E., Banday, A. J., et al. 2005, [ApJ, 622, 759](http://dx.doi.org/10.1086/427976)
 * Han, D., Sehgal, N., MacInnis, A., et al. 2020, [arXiv:2007.14405 [astro-ph.CO]](https://arxiv.org/abs/2007.14405)
-* Hilton, M., Sifon, C., Naess, S., et al. 2020, [arXiv:2009.11043 [astro-ph.CO]] (https://arxiv.org/abs/2009.11043)
+* Hilton, M., Sifon, C., Naess, S., et al. 2020, [arXiv:2009.11043 [astro-ph.CO]](https://arxiv.org/abs/2009.11043)
 * Hunter, J. D. 2007, [Computing in Science & Engineering, 9, 90](http://dx.doi.org/10.1109/MCSE.2007.55)
 * Lewis, A. 2019, [arXiv:1910.13970 [astro-ph.IM]](http://arxiv.org/abs/1910.13970)
 * Lewis, A., Challinor, A., & Lasenby, A. 2000, [ApJ, 538, 473](http://dx.doi.org/10.1086/309179)
@@ -208,5 +209,6 @@ When in the container if you wish to save work or data locally simply save them 
 * Naess et al. 2020, In preparation, 1 [pre-publication](https://phy-act1.princeton.edu/public/saiola/act_dr4_N20.pdf)
 * Naess et al. 2014, [JCAP, 10, 007](https://doi.org/10.1088/1475-7516/2014/10/007)
 * Price-Whelan, A. M., Sip ̋ocz, B. M., Günther, H. M., et al. 2018, [AJ, 156, 123](http://dx.doi.org/10.3847/1538-3881/aabc4f)
+* Plotly Technologies Inc. Collaborative data science. Montréal, QC, 2015. https://plot.ly.
 * Reinecke, M., & Seljebotn, D. S. 2013, [A&A, 554, A112](http://dx.doi.org/10.1051/0004-6361/201321494)
 * Zonca, A., Singer, L., Lenz, D., et al. 2019, [Journal of OpenSource Software, 4, 1298](http://dx.doi.org/10.21105/joss.01298)
