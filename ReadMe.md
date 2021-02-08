@@ -175,7 +175,7 @@ When in the container if you wish to save work or data locally simply save them 
 
 ### Dependencies 
 - [Pixell](https://github.com/simonsobs/pixell/)
-- [pyactlike](https://github.com/Collaboration/pyactlike)
+- [pyactlike](https://github.com/ACTCollaboration/pyactlike)
 - [nawrapper](https://github.com/xzackli/nawrapper)
 - [Healpy](https://healpy.readthedocs.io/en/latest/)
 - [getdist](https://getdist.readthedocs.io/en/latest/)
