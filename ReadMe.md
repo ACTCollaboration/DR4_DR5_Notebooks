@@ -1,8 +1,8 @@
-## This repository allows users to run and access the map-manipulation library Pixell and run the Jupyter notebook tutorials associated with Data Release 4.
+## This repository allows users to run and access the map-manipulation library Pixell and run the Jupyter notebook tutorials associated with Data Release 4 and 5 (DR4 and DR5).
 
-ACT's Data Release 4 includes intensity and polarization maps covering close to half the sky as well as a variety of other data products.  These data products are described in some detail in the Python Notebook Tutorials presented here.  The tutorials also introduce users to the Plate Carree maps used for the ACT data products as well as the python library, Pixell, used to handle the maps.
+ACT's DR4 and DR5 include intensity and polarization maps covering close to half the sky as well as a variety of other data products.  These data products are described in some detail in the Python Notebook Tutorials presented here.  The tutorials also introduce users to the Plate Carree maps used for the ACT data products as well as the python library, Pixell, used to handle the maps.
 
-The full list of ACT DR4 data products can be found on LAMBDA [here](https://lambda.gsfc.nasa.gov/product/act/). 
+The full list of ACT DR4 and DR5 data products can be found on LAMBDA [here](https://lambda.gsfc.nasa.gov/product/act/). 
 
 For questions or comments pertaining to these notebooks please reach out to our help desk at act_notebooks@googlegroups.com.
 
@@ -28,7 +28,7 @@ Or if you are working on a mac and don't have wget set up, you can use homebrew 
 	
 The above will pull all of the data products with the exception of the full-resolution, full-size coadded maps due to the size of these files. Therefore, for the coadded map we automatically provide smaller versions (a full-res, smaller-footprint-cutout, and a low-res, full-size-footprint version); however, you can also get the full map from the LAMBDA website if you wish to use that.  You would need the file: 
 
-	"act_planck_dr4.01_s08s16_AA_f150_night_map.fits"
+	"act_planck_dr5.01_s08s18_AA_f150_night_map.fits"
 
 Make sure you change the variable `path` in [Section 1](Notebooks/Section_1_Introduction.ipynb) to reflect the directory holding your local data!
 
@@ -82,7 +82,7 @@ Most of the packages required to run the notebooks have well documented installa
 --------------
 ## Docker Installation
 
-We now walk through the Docker installation procedure.  The initial set up should be reasonably fast with the exception of the step that downloads the data.  AFter setting up the container up once, it's easy to relaunch it with a single command at any time.
+We now walk through the Docker installation procedure.  The initial set up should be reasonably fast with the exception of the step that downloads the data.  After setting up the container up once, it's easy to relaunch it with a single command at any time.
 
 1) Install and run [docker](https://www.docker.com/):
 
