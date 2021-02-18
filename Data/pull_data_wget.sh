@@ -88,8 +88,8 @@ wget https://astro.ukzn.ac.za/~mjh/ACTDR5/v1.0b3/DR5_cluster-catalog_v1.0b3.fits
 # ~~~~~~ Notebook Ancillary Products ~~~~~~~~~~~~~
 
 echo "get the coadd maps"
-wget -O act_planck_dr4.01_s08s16_AA_f150_night_map_d56_I.fits https://phy-act1.princeton.edu/public/zatkins/act_planck_dr4.01_s08s16_AA_f150_night_map_d56_I.fits
-wget -O act_planck_dr4.01_s08s16_AA_f150_night_map_dg_I.fits https://phy-act1.princeton.edu/public/zatkins/act_planck_dr4.01_s08s16_AA_f150_night_map_dg_I.fits
+wget -O act_planck_dr5.01_s08s18_AA_f150_night_map_d56_I.fits https://phy-act1.princeton.edu/public/zatkins/act_planck_dr5.01_s08s18_AA_f150_night_map_d56_I.fits
+wget -O act_planck_dr5.01_s08s18_AA_f150_night_map_dg_I.fits https://phy-act1.princeton.edu/public/zatkins/act_planck_dr5.01_s08s18_AA_f150_night_map_dg_I.fits
 
 wget -O messier_objs.csv https://phy-act1.princeton.edu/public/zatkins/messier_objs.csv
 wget -O camb_theory.dat https://phy-act1.princeton.edu/public/zatkins/camb_theory.dat

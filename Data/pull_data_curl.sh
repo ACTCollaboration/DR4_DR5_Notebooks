@@ -4,8 +4,8 @@
 # ~~~~~~~ Derived Maps ~~~~~~~~~~~
 # Temporarily get them from phy-act1
 echo "get the coadd maps"
-curl -O https://phy-act1.princeton.edu/public/zatkins/act_planck_dr4.01_s08s16_AA_f150_night_map_d56_I.fits
-curl -O https://phy-act1.princeton.edu/public/zatkins/act_planck_dr4.01_s08s16_AA_f150_night_map_dg_I.fits
+curl -O https://phy-act1.princeton.edu/public/zatkins/act_planck_dr5.01_s08s18_AA_f150_night_map_d56_I.fits
+curl -O https://phy-act1.princeton.edu/public/zatkins/act_planck_dr5.01_s08s18_AA_f150_night_map_dg_I.fits
 
 echo "get lensing maps"
 curl -O https://phy-act1.princeton.edu/public/zatkins/act_planck_dr4.01_s14s15_D56_lensing_kappa_baseline.fits
@@ -88,9 +88,6 @@ curl -O https://astro.ukzn.ac.za/~mjh/ACTDR5/v1.0b3/DR5_cluster-catalog_v1.0b3.f
 
 # ~~~~~~ Notebook Ancillary Products ~~~~~~~~~~~~~
 
-echo "get the coadd maps"
-curl -O https://phy-act1.princeton.edu/public/zatkins/act_planck_dr4.01_s08s16_AA_f150_night_map_d56_I.fits
-curl -O https://phy-act1.princeton.edu/public/zatkins/act_planck_dr4.01_s08s16_AA_f150_night_map_dg_I.fits
 
 curl -O https://phy-act1.princeton.edu/public/zatkins/messier_objs.csv
 curl -O https://phy-act1.princeton.edu/public/zatkins/camb_theory.dat
