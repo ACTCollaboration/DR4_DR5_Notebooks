@@ -13,7 +13,7 @@ There are two options for building and running this repo: a completely local ins
 ---
 
 ## Local Installation 
-### Download the neccesary data products 
+### Download the necessary data products 
 The links to all of the products used in these notebooks have been compiled in pull_data bash scipts which makes it simple to download the data products using wget or curl. Feel free to add any other data products you'd like to pull by adding it to the relevant pull_data file following the pre-existing format.
 
 In addition to providing pull_data scripts for the entire notebook set, we've also provided scripts that pull products for a subset of notebooks as a space-saving measure. If you only want to run a few of the notebooks, and would like to only pull data corresponding to those notebooks, simply replace the filename in the next two commands with the filename corresponding to the desired notebook(s). The full dataset is around 7.3GB in size: it should take you ~30 - 45 min to download everything (LAMBDA can be slow, but the other servers should permit a faster download speed).
