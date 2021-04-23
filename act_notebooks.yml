@@ -1,0 +1,32 @@
+name: act_notebooks
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - astropy
+  - camb
+  - cython
+  - fftw
+  - healpy
+  - ipykernel
+  - ipython
+  - jupyter
+  - matplotlib
+  - namaster
+  - numpy
+  - pandas
+  - plotly
+  - pillow
+  - pip
+  - pytest
+  - python=3.9.2
+  - scipy
+  - setuptools
+  - tk
+  - pip:
+    - getdist
+    - h5py
+    - pyyaml
+    - pixell
+    - git+https://github.com/xzackli/nawrapper
+    - git+https://github.com/ACTCollaboration/pyactlike
