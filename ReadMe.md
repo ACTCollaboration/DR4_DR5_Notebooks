@@ -8,11 +8,10 @@ For questions or comments pertaining to these notebooks please reach out to our 
 
 ## Installing and Running the Notebooks
 
-There are two options for building and running this repo: a completely local installation, along with a local download of required data, or a fully-containerized installation via Docker, which installs all dependencies. In the latter case, users will manually download required data during the container setup. We provide instructions for either case. We assume you are running >= Python 3.6 as your default `python` version in your environment.
+There are three options for building and running this repo: a conda environment, a completely local installation, or a fully-containerized installation via Docker, which installs all dependencies. We recomend using the conda environment setup if possible. Along with the notebooks and dependencies users will need to download the data products following the instructions below. We provide instructions for each of the cases. We assume you are running >= Python 3.6 as your default `python` version in your environment.
 
 ---
-
-## Local Installation 
+## For the Conda Environment or the Local Installation
 ### Download the necessary data products 
 The links to all of the products used in these notebooks have been compiled in pull_data bash scipts which makes it simple to download the data products using wget or curl. Feel free to add any other data products you'd like to pull by adding it to the relevant pull_data file following the pre-existing format.
 
@@ -32,7 +31,18 @@ The above will pull all of the data products with the exception of the full-reso
 
 Make sure you change the variable `path` in [Section 1](Notebooks/Section_1_Introduction.ipynb) to reflect the directory holding your local data!
 
-### Installing packages
+### If using the conda environment:
+This is the most straightforward set up option and takes the least amount of work to set up as it uses a custom environment we've created to use with these notebooks. If you prefer to set up your own environment please look at the local installation instructions below. 
+
+In this repository we have included the file `act_notebooks.yml` which can be used to set up a conda environment. To do so navigate to the repository that contains the file via your terminal. In the terminal run :
+
+	conda env create -f act_notebooks.yml
+Once the environment has been created you can launch it using :
+
+	conda activate act_notebooks
+From there launch jupyter notebook and you should be able to run the notebooks.
+
+### If you are using a local installation: 
 We highly recommend working entirely within a conda environment to manage packages. If that is not possible for you, you should still be able to install all dependencies.
 
 Most of the packages required to run the notebooks have well documented installation procedures, available on their websites ([Healpy](https://healpy.readthedocs.io/en/latest/), [getdist](https://getdist.readthedocs.io/en/latest/), [astropy](https://docs.astropy.org/en/stable/), [CAMB](https://camb.readthedocs.io/en/latest/index.html), [matplotlib](https://matplotlib.org/), [numpy](https://numpy.org/), [pandas](https://pandas.pydata.org/), [plotly](https://plotly.com/python/), [scipy](https://www.scipy.org/)). For proprietary packages ([Pixell](https://github.com/simonsobs/pixell/), [pyactlike](https://github.com/ACTCollaboration/pyactlike), [nawrapper](https://github.com/xzackli/nawrapper)), you can navigate to the ReadMe of the repositories and follow their installation documentation; or, we have reproduced it for you here:
