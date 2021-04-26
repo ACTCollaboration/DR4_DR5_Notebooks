@@ -8,7 +8,7 @@ For questions or comments pertaining to these notebooks please reach out to our 
 
 ## Installing and Running the Notebooks
 
-There are three options for building and running this repo: a conda environment, a completely local installation, or a fully-containerized installation via Docker, which installs all dependencies. We recomend using the conda environment setup if possible. Along with the notebooks and dependencies users will need to download the data products following the instructions below. We provide instructions for each of the cases. We assume you are running >= Python 3.6 as your default `python` version in your environment.
+There are three options for building and running this repo: a conda environment, a completely local installation, or a fully-containerized installation via Docker, which installs all dependencies. We recommend using the conda environment setup if possible. Along with the notebooks and dependencies users will need to download the data products following the instructions below. We provide instructions for each of the cases. We assume you are running >= Python 3.6 as your default `python` version in your environment.
 
 ---
 ## For the Conda Environment or the Local Installation
@@ -37,10 +37,10 @@ This is the most straightforward set up option and takes the least amount of wor
 In this repository we have included the file `act_notebooks.yml` which can be used to set up a conda environment. To do so navigate to the repository that contains the file via your terminal. In the terminal run :
 
 	conda env create -f act_notebooks.yml
-Once the environment has been created you can launch it using :
+Once the environment has been created you can enter it using :
 
 	conda activate act_notebooks
-From there launch jupyter notebook and you should be able to run the notebooks.
+From there launch `jupyter notebook` and you should be able to run the notebooks.
 
 ### If you are using a local installation: 
 We highly recommend working entirely within a conda environment to manage packages. If that is not possible for you, you should still be able to install all dependencies.
