@@ -3,7 +3,6 @@
 ACT's DR4 and DR5 include intensity and polarization maps covering close to half the sky as well as a variety of other data products.  These data products are described in some detail in the Python Notebook Tutorials presented here.  The tutorials also introduce users to the Plate Carree maps used for the ACT data products as well as the python library, Pixell, used to handle the maps.
 
 The full list of ACT DR4 and DR5 data products can be found on LAMBDA [here](https://lambda.gsfc.nasa.gov/product/act/). 
-
 For questions or comments pertaining to these notebooks please reach out to our help desk at act_notebooks@googlegroups.com.
 
 ## Installing and Running the Notebooks
