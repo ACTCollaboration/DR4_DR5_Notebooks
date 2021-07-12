@@ -11,6 +11,7 @@ echo "Get the Planck map"
 wget https://irsa.ipac.caltech.edu/data/Planck/release_2/all-sky-maps/maps/HFI_SkyMap_143_2048_R2.02_full.fits
 
 wget -O messier_objs.csv https://phy-act1.princeton.edu/public/zatkins/messier_objs.csv
+wget -O camb_theory.dat https://phy-act1.princeton.edu/public/zatkins/camb_theory.dat
 
 # ~~~~~~~ ACT Cluster catalog ~~~~~~
 echo "Get cluster catalogs"
