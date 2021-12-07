@@ -41,6 +41,8 @@ Once the environment has been created you can enter it using :
 	conda activate act_notebooks
 From there launch `jupyter notebook` and you should be able to run the notebooks.
 
+Note: If you are setting this environment up on NERSC or another computing system it may be necessary to go in and change the syntax of the yml file slightly. If you get the following error: `ERROR: Invalid requirement: 'pixell=0.12.0'`, substitute `pixell=0.12.0` with `pixell==0.12.0`. 
+
 ### If you are using a local installation: 
 We highly recommend working entirely within a conda environment to manage packages. If that is not possible for you, you should still be able to install all dependencies.
 
