@@ -27,6 +27,6 @@ dependencies:
     - getdist
     - h5py
     - pyyaml
-    - pixell=0.12.0
+    - pixell>=0.12.0
     - git+https://github.com/xzackli/nawrapper
     - git+https://github.com/ACTCollaboration/pyactlike
